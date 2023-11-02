@@ -1,125 +1,210 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
 
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: black !important;
+body {
+  background-color: black !important;
+  overflow-x: hidden;
 }
 
-
-.fc{
-    color: aliceblue !important;
-    font-family: "Poppins";
+.fc {
+  color: aliceblue !important;
+  font-family: "Poppins";
 }
 
-.logo{
-    animation-name: logo-ani;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
+.logo {
+  animation-name: logo-ani;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
 }
 
-.contact-btn{
-    border:2px solid rgb(255,193,5) !important;
-    border-radius: 5px;
-    color:rgb(255,193,5);
+.logo:hover {
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 0px 0px 50px 20px rgba(255, 193, 5, 0.3);
 }
 
-.contact-btn:hover{
-    border:2px solid aliceblue !important;
-    background-color: aliceblue;
-    border-radius: 5px;
-    color:black !important;
-    transition: 0.5s ease-in-out;
-    color: rgba(255, 255, 255, 0.3);
-    box-shadow: 0px 0px 50px 10px rgba(255, 255, 255, 0.3);
+.contact-btn {
+  border: 2px solid rgb(255, 193, 5) !important;
+  border-radius: 5px;
+  color: rgb(255, 193, 5);
 }
 
-.nav{
-    animation-name: nav-ani;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-in-out;
-}
-.navbg{
-    background: transparent !important;
-    backdrop-filter: blur(5px) !important;
-    border: 2px solid rgb(255,193,5);
-}
-
-.hero-row{
-    height: 100vh !important;
-    padding-top: 5vh;
+.contact-btn:hover {
+  border: 2px solid aliceblue !important;
+  background-color: aliceblue;
+  border-radius: 5px;
+  color: black !important;
+  transition: 0.5s ease-in-out;
+  color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 0px 50px 10px rgba(255, 255, 255, 0.3);
 }
 
-.hero-texts{
-    animation-name: hero-texts-ani;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
+.nav {
+  animation-name: nav-ani;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  padding-inline: 25px !important;
 }
 
-.hero .hero-image{
-    background-image: url("assets/images/hero.svg");
-    background-size:contain;
-    background-repeat: no-repeat;
-    height: 500px;
-
+.nav:hover {
+  text-decoration: underline;
+  text-underline-offset: calc(10px);
+  color: rgb(255, 193, 5) !important;
+  transition: 1s;
 }
 
-.hi{
-    animation-name: hero-image-ani;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-in-out;
-    
+.active {
+  text-decoration: underline !important;
+  text-underline-offset: calc(10px);
+  color: rgb(255, 193, 5) !important;
+}
+.navbg {
+  background: transparent !important;
+  backdrop-filter: blur(5px) !important;
+  border: 2px solid rgb(255, 193, 5);
 }
 
-.hero .hero-texts .post{
-
-    font-size: 55px;
-    color:rgb(255,193,5);
- 
+.hero-row {
 }
-.exbtn:hover{
-    color: rgba(255, 255, 255, 1);
-    box-shadow: 0px 0px 50px 20px rgba(255,193,5, .3);
+
+.hero-texts {
+  animation-name: hero-texts-ani;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  padding-top: 30px;
+}
+
+.hero-image {
+  background-image: url("assets/images/hero.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 459px;
+}
+
+.hi {
+  animation-name: hero-image-ani;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+}
+
+.hero-texts .post {
+  font-size: 55px;
+  color: rgb(255, 193, 5);
+}
+.exbtn:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 50px 15px rgba(255, 193, 5, 0.3);
+  transition: 0.5s;
+}
+
+.images-set {
+  width: 11%;
+  padding-inline-start: 10px;
+}
+
+.images-set:hover {
+  scale: 1.2;
+  transition: 0.35s;
+}
+
+.shape {
+  width: 60%;
+  height: 60%;
+  margin-left: 50px;
+  position: relative;
+  margin-top: 50px;
+  border: 2px solid rgb(255, 193, 5);
+  position: relative;
+  transform: rotate(45deg);
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.hero {
+  background-image: url("https://i0.wp.com/www.goodwin.edu/enews/wp-content/uploads/2022/12/medical-billing-and-coding-employment-requirements-tiny-2-scaled.jpg?resize=1920%2C768&ssl=1") !important;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+.about {
+  font-size: 55px;
+  color: rgb(255, 193, 5) !important;
+  margin-left: 100px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
+.about-fade {
+  font-size: 100px;
+  color: rgb(255, 193, 5) !important;
+  position: absolute;
+  margin-top: -30px !important;
+  margin-left: -120px;
+  opacity: 0.1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-heading {
+  color: rgb(255, 193, 5);
+}
+
+.about-data {
+  font-weight: 300;
+  font-size: 18px;
+  padding: 25px;
+  border-inline: 2px solid;
+  text-align: center;
+}
+
+.about-image {
+  width: 430px;
+  height: 350px;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 @keyframes logo-ani {
-    0%{
-        margin-left: -200px;
-    }
-    100%{
-        margin-left: 0px;
-    }
+  0% {
+    margin-left: -500px;
+  }
+  100% {
+    margin-left: 0px;
+  }
 }
 
 @keyframes nav-ani {
-    0%{
-        margin-left: -200px;
-    }
-    100%{
-        margin-left: 0px;
-    }
+  0% {
+    margin-left: -200px;
+  }
+  100% {
+    margin-left: 0px;
+  }
 }
 
-@keyframes hero-image-ani{
-    0%{
-        scale:0;
-    }
-    100%{
-        sacle:1;
-    }
+@keyframes hero-image-ani {
+  0% {
+    scale: 0;
+  }
+  100% {
+    sacle: 1;
+  }
 }
 
-@keyframes  hero-texts-ani{
-    0%{
-        margin-top: 200px;
-        opacity: 0;
-    }
-    100%{
-        margin-top: 0px;
-        opacity: 1;
-    }
+@keyframes hero-texts-ani {
+  0% {
+    margin-top: 200px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0px;
+    opacity: 1;
+  }
 }
