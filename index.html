@@ -34,13 +34,13 @@
   <body>
     <!--Navigation Bar-->
     <div class="hero"></div>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg fixed-navbar sticky-top">
       <div class="container">
         <a
           class="navbar-brand text-warning fs-2 logo"
           style="font-weight: 500"
           href="#"
-          >Nimesha Jinarajadasa</a
+          ><img src="assets/images/logo.png" width="300px" alt=""></a
         >
 
         <button
@@ -66,16 +66,16 @@
               >
             </div>
             <div class="nav-item d-flex justify-content-center">
-              <a class="nav-link fc nav" href="#">About</a>
+              <a class="nav-link fc nav" href="#about-section">About</a>
             </div>
             <div class="nav-item d-flex justify-content-center">
-              <a class="nav-link fc nav" href="#">Services</a>
+              <a class="nav-link fc nav" href="#services-section">Services</a>
             </div>
             <div class="nav-item d-flex justify-content-center">
-              <a class="nav-link fc nav" href="#">Portfolio</a>
+              <a class="nav-link fc nav" href="#portfolio-section">Portfolio</a>
             </div>
             <div class="nav-item nav d-flex justify-content-center">
-              <a class="nav-link fc contact-btn ms-lg-2 ps-2 pe-2" href="#"
+              <a class="nav-link fc contact-btn ms-lg-2 ps-2 pe-2" href="#contact-section"
                 >Contact</a
               >
             </div>
@@ -152,7 +152,7 @@
 
     <!--About Section-->
     <br />
-    <div class="container">
+    <div class="container" id="about-section">
       <div class="row">
         <hr class="line" />
 
@@ -160,6 +160,7 @@
           About
         </h1>
         <h1 class="text-light text-center about col-6 offset-4 mt-4">About</h1>
+        <p class="section-desc">In the spirit of sharing a piece of my world with you, this section is a window into my journey, interests, and the experiences that shape who I am.</p>
         <hr class="line" />
         <div
           class="text-light offset-md-0 col-md-6 d-block d-md-inline justify-content-center pb-5 about-texts"
@@ -201,7 +202,7 @@
     </div>
 
     <!--Services Section-->
-    <div class="container">
+    <div class="container" id="services-section">
       <div class="row">
         <hr class="line" />
         <h1 class="text-light text-center about-fade col-6 offset-2 mt-2">
@@ -210,6 +211,7 @@
         <h1 class="text-light text-center about col-6 offset-4 mt-4">
           Services
         </h1>
+        <p class="section-desc">A quick overview of the valuable solutions and expertise I provide, ensuring you can easily discover how I can meet your needs.</p>
         <hr class="line" />
         <div
           class="services-container d-md-flex d-block grid gap-0 column-gap-3 justify-content-center align-items-baseline"
@@ -263,8 +265,103 @@
       </div>
     </div>
 
+    <!--Portfolio-->
+    <div class="container" id="portfolio-section">
+      
+      <div class="row">
+        <hr class="line" />
+
+        <h1 class="text-light text-center about-fade col-6 offset-2 mt-2">
+          Portfolio
+        </h1>
+        <h1 class="text-light text-center about col-6 offset-4 mt-4">
+          Portfolio
+        </h1>
+        <p class="section-desc">The curated showcase of our finest work, offering a glimpse into our creative and professional endeavors. Explore our successes, see our capabilities, and witness the quality we bring to every project.</p>
+        <hr class="line" />
+        <br>
+    <br>
+
+      <div class="row d-inline-flex d-block justify-content-center">
+
+        <div class="card col-12 col-md-3">
+          <img src="https://development.asia/sites/default/files/explainer/what_is_cloud_computing.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Cloud Solutions</h5>
+            <p class="card-text">Cloud solutions provide scalable and cost-effective IT resources,
+              enabling businesses to adapt, innovate, and grow.</p>
+            <a href="#" class="btn btn-warning fw-bold submit-btn">Read More <i class="bi bi-github fs-5"></i></a>
+          </div>
+        </div>
+        <div class="card col-12 col-md-3">
+          <img src="https://orangematter.solarwinds.com/wp-content/uploads/2022/03/DevOps-lifecycle-capabilities-1024x621.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">DevOps</h5>
+            <p class="card-text">DevOps is a software development approach that combines
+              development and IT operations to streamline and automate the
+              software delivery process, resulting in faster and more reliable
+              releases</p>
+            <a href="#" class="btn btn-warning fw-bold submit-btn">Read More <i class="bi bi-github fs-5"></i></a>
+          </div>
+        </div>
+        <div class="card col-12 col-md-3">
+          <img src="https://miro.medium.com/v2/resize:fit:1400/1*vkHiocXhkClGCDzkNBTeQQ.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Microservices</h5>
+            <p class="card-text">Microservices is an architectural style for designing software as
+              a collection of small, loosely coupled, and independently
+              deployable services that enable agility and scalability in
+              application development.</p>
+            <a href="#" class="btn btn-warning fw-bold submit-btn">Read More <i class="bi bi-github fs-5"></i></a>
+          </div>
+        </div>
+
+      </div>
+        
+      <div class="row d-inline-flex d-block justify-content-center">
+
+        <div class="card col-12 col-md-3">
+          <img src="https://development.asia/sites/default/files/explainer/what_is_cloud_computing.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Cloud Solutions</h5>
+            <p class="card-text">Cloud solutions provide scalable and cost-effective IT resources,
+              enabling businesses to adapt, innovate, and grow.</p>
+            <a href="#" class="btn btn-warning fw-bold submit-btn">Read More <i class="bi bi-github fs-5"></i></a>
+          </div>
+        </div>
+        <div class="card col-12 col-md-3">
+          <img src="https://orangematter.solarwinds.com/wp-content/uploads/2022/03/DevOps-lifecycle-capabilities-1024x621.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">DevOps</h5>
+            <p class="card-text">DevOps is a software development approach that combines
+              development and IT operations to streamline and automate the
+              software delivery process, resulting in faster and more reliable
+              releases</p>
+            <a href="#" class="btn btn-warning fw-bold submit-btn">Read More <i class="bi bi-github fs-5"></i></a>
+          </div>
+        </div>
+        <div class="card col-12 col-md-3">
+          <img src="https://miro.medium.com/v2/resize:fit:1400/1*vkHiocXhkClGCDzkNBTeQQ.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Microservices</h5>
+            <p class="card-text">Microservices is an architectural style for designing software as
+              a collection of small, loosely coupled, and independently
+              deployable services that enable agility and scalability in
+              application development.</p>
+            <a href="#" class="btn btn-warning fw-bold submit-btn">Read More <i class="bi bi-github fs-5"></i></a>
+          </div>
+        </div>
+
+      </div>
+      
+      </div>
+    </div>
+    <br>
+    <br>
+
+
     <!--Contact Section-->
-    <div class="container">
+    <div class="container" id="contact-section">
       <div class="row">
         <hr class="line" />
 
@@ -274,27 +371,33 @@
         <h1 class="text-light text-center about col-6 offset-4 mt-4">
           Contact
         </h1>
+        <p class="section-desc">Gateway to connecting with me. Whether you have questions, inquiries, or just want to say hello, this is the place to reach out and start a conversation.</p>
         <hr class="line" />
 
         <div class="row form-control d-flex contact-form">
           <div class="col-12 col-md-6">
-            <label for="f_name" class="form-label">First Name</label>
-            <input class="form-control" type="text" id="f_name" />
+            <label for="f_name" class="form-label fw-bold">First Name</label>
+            <input class="form-control focus-ring focus-ring-warning" type="text" id="f_name" placeholder="John"/>
           </div>
           <div class="col-12 col-md-6">
-            <label for="l_name" class="form-label">Last Name</label>
-            <input class="form-control" type="text" id="l_name" />
+            <label for="l_name" class="form-label fw-bold">Last Name</label>
+            <input class="form-control focus-ring focus-ring-warning " type="text" id="l_name" placeholder="Wick"/>
           </div>
 
           <div class="col-12">
-            <label for="Email" class="form-label">Email</label>
-            <input class="form-control" type="text" id="Email" />
+            <label for="Email" class="form-label fw-bold" >Email</label>
+            <input class="form-control focus-ring focus-ring-warning " type="text" id="Email" placeholder="john@example.com"/>
           </div>
 
           <div class="col-12">
-            <label for="message" class="form-label">Message</label>
-            <textarea class="form-control" id="message" row="5"/></textarea>
+            <label for="message" class="form-label fw-bold" >Message</label>
+            <textarea class="form-control focus-ring focus-ring-warning " id="message" row="5" placeholder="Hey!"/></textarea>
           </div>
+          <div class="col-12 col-md-3">
+            <br>
+            <div type="submit" class="btn btn-warning form-control focus-ring focus-ring-warning fw-bold  submit-btn">Send</div>
+          </div>
+          
         </div>
       </div>
     </div>
@@ -302,9 +405,17 @@
 
     <!--Footer-->
     <div class="container-fluid">
-        <div class="social-icons"></div>
-        <div class="copyright text-light text-center">
-          All right reserved &copy; Nimesha Jinarajadasa 2023
+      <div class="row">
+        <div class="social-icons bg-warning">
+          <i class="bi bi-facebook p-2 s-icon"></i>
+          <i class="bi bi-youtube p-2 s-icon"></i>
+          <i class="bi bi-github p-2 s-icon"></i>
+          <i class="bi bi-linkedin p-2 s-icon"></i>
+          <i class="bi bi-twitter-x p-2 s-icon"></i>
+        </div>
+        </div>
+        <div class=" row copyright">
+          All right reserved 2023 &copy; Nimesha Jinarajadasa 
         </div>
     </div>
     <!--Custom JavaScript-->

@@ -11,6 +11,11 @@ body {
   overflow-x: hidden;
 }
 
+.fixed-navbar{
+  background: transparent;
+  backdrop-filter: blur(30px);
+}
+
 .fc {
   color: aliceblue !important;
   font-family: "Poppins";
@@ -155,7 +160,7 @@ body {
   height: 100vh;
   position: absolute;
   z-index: -1;
-  opacity: 0.2;
+  opacity: 0.1;
   filter: grayscale(100%);
 }
 
@@ -251,25 +256,71 @@ body {
 }
 
 .contact-form{
-  background: transparent !important;
-  color: aliceblue !important;
-  border: 2px solid rgb(255, 193, 5) !important;
+  background: white  !important;
+  color: black !important;
+  border: 2px solid black !important;
   padding: 40px !important;
+  margin-top: 25px !important;
 }
 
 input, textarea{
   background-color: transparent !important;
-  border: 2px solid rgb(255, 193, 5) !important;
-  color: aliceblue !important;
-}
-
-input, textarea:focus{
-  outline: rgb(255, 193, 5) !important;
+  border: 2px solid black !important;
+  color: black !important;
+  padding-inline:20px !important;
+  padding-block:10px !important;
 }
 
 .copyright{
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 500 !important;
+  width: 100vw;
+  background-color: rgb(255, 193, 5);
+  color: black;
+  text-align: center !important;
+  display: flex;
+  justify-content: center;
+  padding-block: 20px;
+}
+
+.submit-btn:hover{
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 50px 15px rgba(255, 193, 5, 0.3);
+}
+
+.social-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 50px;
+  background-color: rgb(255, 193, 5);
+  color: black;
+  font-size: 25px;
+  padding-top: 25px;
+}
+
+.s-icon:hover{
+  scale: 1.5;
+}
+
+.card{
+  margin-inline-start: 10px;
+  margin-block-end: 10px;
+}
+
+.card:hover{
+  scale:1.1;
+  z-index:1;
+  box-shadow: 0px 0px 50px 20px rgba(255, 255, 255, 0.3);
+  border: 2px solid rgb(255, 193, 5);
+  transition: 0.5s;
+
+}
+
+.section-desc{
+  color: aliceblue !important;
+  text-align: center !important;
 }
 
 
