@@ -151,7 +151,7 @@
     </div>
 
     <!--About Section-->
-    <br>
+    <br />
     <div class="container">
       <div class="row">
         <hr class="line" />
@@ -161,7 +161,9 @@
         </h1>
         <h1 class="text-light text-center about col-6 offset-4 mt-4">About</h1>
         <hr class="line" />
-        <div class="text-light offset-md-0 col-md-6 d-block d-md-inline justify-content-center pb-5 about-texts">
+        <div
+          class="text-light offset-md-0 col-md-6 d-block d-md-inline justify-content-center pb-5 about-texts"
+        >
           <h3 class="about-heading">
             _____ As a Senior Software Engineer ______
           </h3>
@@ -209,26 +211,102 @@
           Services
         </h1>
         <hr class="line" />
-        <div class="services-container d-md-flex d-block grid gap-0 column-gap-3 justify-content-center">
-          <div class="service-item service-item1 col-11 col-md-3 d-flex flex-column justify-content-center align-items-center">
+        <div
+          class="services-container d-md-flex d-block grid gap-0 column-gap-3 justify-content-center align-items-baseline"
+        >
+          <div
+            class="service-item service-item1 col-11 col-md-3 d-flex flex-column justify-content-center align-items-center"
+          >
             <i class="bi bi-cloud service-icon"></i>
-            <p>Cloud Solutions</p>
+            <h3 class="mt-4">Cloud Solutions</h3>
+            <p class="text-center about-para">
+              Cloud solutions provide scalable and cost-effective IT resources,
+              enabling businesses to adapt, innovate, and grow.
+            </p>
           </div>
-          <div class="service-item service-item2 col-11 col-md-3 d-flex  flex-column justify-content-center align-items-center">
+          <div
+            class="service-item service-item2 col-11 col-md-3 d-flex flex-column justify-content-center align-items-center"
+          >
             <i class="bi bi-infinity service-icon"></i>
-            <p>DevOps</p>
+            <h3 class="mt-4">DevOps</h3>
+            <p class="text-center about-para">
+              DevOps is a software development approach that combines
+              development and IT operations to streamline and automate the
+              software delivery process, resulting in faster and more reliable
+              releases
+            </p>
           </div>
-          <div class="service-item service-item3 col-11 col-md-3 d-flex flex-column justify-content-center align-items-center">
+          <div
+            class="service-item service-item3 col-11 col-md-3 d-flex flex-column justify-content-center align-items-center"
+          >
             <i class="bi bi-boxes service-icon"></i>
-            <p>Microservices</p>
+            <h3 class="mt-4">Microservices</h3>
+            <p class="text-center about-para">
+              Microservices is an architectural style for designing software as
+              a collection of small, loosely coupled, and independently
+              deployable services that enable agility and scalability in
+              application development.
+            </p>
           </div>
-          <div class="service-item service-item4 col-11 col-md-3 d-flex  flex-column justify-content-center align-items-center">
+          <div
+            class="service-item service-item4 col-11 col-md-3 d-flex flex-column justify-content-center align-items-center"
+          >
             <i class="bi bi-robot service-icon"></i>
-            <p>Automations</p></div>
+            <h3 class="mt-4">Automations</h3>
+            <p class="text-center about-para">
+              Automation refers to the use of technology to perform tasks with
+              minimal human intervention, increasing efficiency and reducing
+              manual effort.
+            </p>
+          </div>
         </div>
       </div>
     </div>
 
+    <!--Contact Section-->
+    <div class="container">
+      <div class="row">
+        <hr class="line" />
+
+        <h1 class="text-light text-center about-fade col-6 offset-2 mt-2">
+          Contact
+        </h1>
+        <h1 class="text-light text-center about col-6 offset-4 mt-4">
+          Contact
+        </h1>
+        <hr class="line" />
+
+        <div class="row form-control d-flex contact-form">
+          <div class="col-12 col-md-6">
+            <label for="f_name" class="form-label">First Name</label>
+            <input class="form-control" type="text" id="f_name" />
+          </div>
+          <div class="col-12 col-md-6">
+            <label for="l_name" class="form-label">Last Name</label>
+            <input class="form-control" type="text" id="l_name" />
+          </div>
+
+          <div class="col-12">
+            <label for="Email" class="form-label">Email</label>
+            <input class="form-control" type="text" id="Email" />
+          </div>
+
+          <div class="col-12">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" row="5"/></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+
+    <!--Footer-->
+    <div class="container-fluid">
+        <div class="social-icons"></div>
+        <div class="copyright text-light text-center">
+          All right reserved &copy; Nimesha Jinarajadasa 2023
+        </div>
+    </div>
     <!--Custom JavaScript-->
     <script src="script.js"></script>
     <!--Bootsrap-->
