@@ -323,6 +323,40 @@ input, textarea{
   text-align: center !important;
 }
 
+.timeline{
+  list-style: none;
+  margin-top: 12px;
+  
+}
+
+.tdiv{
+  border-radius: 10px !important;
+}
+.timeline li{
+  background-color:aliceblue;
+  border-inline-start: 10px solid rgb(0, 0, 0);
+  padding: 10px 20px;
+  
+}
+
+.timeline li:hover{
+  background-color:rgb(255, 193, 5);
+  border-inline-start: 10px solid rgb(255, 193, 5);
+  border-radius: 5px 0px 0px 5px;
+}
+
+.active-timeline{
+  background-color:rgb(255, 193, 5) !important;
+  border-inline-start: 10px solid rgb(255, 193, 5) !important;
+  border-radius: 5px 0px 0px 5px !important;
+}
+
+.timeline-desc{
+  margin-inline-start: -12px;
+  background-color:rgb(255, 193, 5);
+  border-radius: 10px 10px 10px 10px;
+}
+
 
 @keyframes logo-ani {
   0% {
