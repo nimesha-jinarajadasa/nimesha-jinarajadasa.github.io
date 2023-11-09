@@ -35,7 +35,7 @@ function showDesc(id){
     }
 }
 
-//Testing
+//Resume Finctionality
 
 $(".step").click( function() {
 	$(this).addClass("active").prevAll().addClass("active");
