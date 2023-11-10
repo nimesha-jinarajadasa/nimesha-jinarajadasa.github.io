@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube API</title>
+</head>
+<body>
+    YouTube Subscribers
+    <div id="subscriberCount"></div>
+
+    YouTube Video Views
+    <div id="viewCount"></div>
+
+    YouTube Video Count
+    <div id="videoCount"></div>
+
+    <h1>Counter : <span id="counter">0</span></h1>
+
+    <script>
+
+    
+    const APIKey = 'AIzaSyATFcx9i93hcMuwXStS9S3gSpqGWby0Jcg';
+    const Userid = 'UCoivqwpFPBbRdhivhrRYzWQ';
+    const subscriberCount= document.getElementById('subscriberCount');
+    const viewCount = document.getElementById('viewCount');
+    const videoCount = document.getElementById('videoCount');
+    
+    var sc = 0;
+   
+
+    let getdata = () => {
+
+        fetch(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${Userid}&key=${APIKey}`)
+        .then(response => {
+            return response.json()
+        })
+        .then(data => {
+            console.log(data);
+            subscriberCount.innerHTML = data["items"][0].statistics.subscriberCount;
+            viewCount.innerHTML = data["items"][0].statistics.viewCount;
+            videoCount.innerHTML = data["items"][0].statistics.videoCount;
+
+            sc = parseInt(data["items"][0].statistics.subscriberCount);
+            
+        })
+
+    }
+
+   getdata();
+
+
+   var counter = document.getElementById("counter");
+
+
+    var i = 0;
+
+   function up(){
+
+       if(sc == i){
+        clearInterval(up);
+       }
+       else{
+        i = i + 1;
+        counter.innerHTML = i;
+       }
+   };
+
+   var set = setInterval(up,1);
+
+ 
+   
+    </script>
+</body>
+</html>
