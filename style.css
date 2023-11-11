@@ -622,7 +622,7 @@ input, textarea{
 }
 
 .all-followers-container{
-
+  margin-top: 20px !important;
   background-color: rgb(26, 26, 26);
   height: 900px !important;
   position: sticky !important;

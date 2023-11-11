@@ -12,29 +12,6 @@ $(document).ready(function(){
     });
 });
 
-
-//Resume functinality
-function showDesc(id){
-
-    var descId = "desc"+id[5];
-
-    for(var i = 1; i <= 7; i++){
-
-        if(i == parseInt(id[5])){
-            document.getElementById(descId).classList = descId+" "+"d-inline";
-            document.getElementById(id).classList = id+" "+"fw-bold active-timeline";
-        
-        }
-        else{
-            document.getElementById("desc"+i.toString()).classList = "desc"+i.toString()+" "+"d-none";
-            /*document.getElementById(id).classList = id+" "+"fw-bold";*/
-            
-        }
-        
-        
-    }
-}
-
 //Resume Finctionality
 
 $(".step").click( function() {
@@ -107,5 +84,81 @@ var counter = setInterval(function(){
     }
 
 }, 1000);
+
+
+//Social Media Statistics
+
+    //YouTube
+    const YTAPIKey = 'AIzaSyATFcx9i93hcMuwXStS9S3gSpqGWby0Jcg';
+    const ytchannelId = 'UCN4fELPxNvqoYlcfmgqlzCw';
+    const subscriberCount= document.getElementById('yt-sub-count');
+    
+    var ytSubscribersCount = 355;
+   
+
+    let getdata = () => {
+
+        fetch(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${ytchannelId}&key=${YTAPIKey}`)
+        .then(response => {
+
+            return response.json()
+
+        })
+        .then(data => {
+
+            console.log(data);
+            ytSubscribersCount = parseInt(data["items"][0].statistics.subscriberCount);
+
+            
+            
+        })
+
+    }
+
+   getdata();
+
+
+   var counter = document.getElementById("yt-sub-count");
+
+    var i = 0;
+
+   var sub = function up(){
+
+       if(ytSubscribersCount == i){
+        clearInterval(sub);
+       }
+       else{
+        i = i + 1;
+        counter.innerHTML = i;
+       }
+   };
+
+   var set = setInterval(sub,1);
+
+   //CoDeKu
+
+   var codeku = document.getElementById("codeku-followers-count");
+   var codekuFollowersCount = 230;
+   codeku.innerHTML = codekuFollowersCount;
+
+   //NJ Linkedin
+
+   var njLinkedin = document.getElementById("nj-followers-count");
+   var njLinkedinFollowersCount = 2703;
+   njLinkedin.innerHTML = njLinkedinFollowersCount;
+
+   //NJ Discord
+
+   var njDiscord = document.getElementById("nj-members-count");
+   var njDiscordMembersCount = 0;
+   njDiscord.innerHTML = njDiscordMembersCount;
+
+   //All Folowers
+
+   var allFollowers = document.getElementById("all-followers");
+   var allFollowersCount = ytSubscribersCount + codekuFollowersCount + njLinkedinFollowersCount + njDiscordMembersCount;
+   allFollowers.innerHTML = allFollowersCount;
+
+
 
  
