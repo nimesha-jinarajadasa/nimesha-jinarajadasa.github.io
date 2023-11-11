@@ -77,4 +77,35 @@ $(".step07").click( function() {
 	$(".section-content-7").addClass("active").siblings().removeClass("active");
 });
 
+//Event Count Down
+
+var eventDate = new Date("Nov 19, 2023 18:00:00").getTime();
+
+var counter = setInterval(function(){
+
+    var dateTimeNow = new Date().getTime();
+    var range = eventDate - dateTimeNow;
+
+    var days = Math.floor(range / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((range % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((range % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((range % (1000 * 60)) / 1000);
+
+
+    document.getElementById('days').innerHTML = days;
+    document.getElementById('hours').innerHTML = hours;
+    document.getElementById('minutes').innerHTML = minutes;
+    document.getElementById('seconds').innerHTML = seconds;
+
+    if(range < 0){
+        clearInterval(counter);
+
+        document.getElementById('days').innerHTML = "00";
+        document.getElementById('hours').innerHTML = "00";
+        document.getElementById('minutes').innerHTML = "00";
+        document.getElementById('seconds').innerHTML = "00";
+    }
+
+}, 1000);
+
  
