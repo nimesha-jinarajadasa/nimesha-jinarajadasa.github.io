@@ -76,8 +76,9 @@ body {
 }
 
 .hero-row {
- display: flex;
- align-items: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
  
 }
 
@@ -171,7 +172,7 @@ body {
   height: 100vh;
   position: absolute;
   z-index: -1;
-  opacity: 0.2;
+  opacity: 0.1;
   filter: grayscale(100%);
 }
 
@@ -747,6 +748,19 @@ input, textarea{
   border-bottom: 20px solid rgb(255, 193, 5 ,0.4);
 }
 
+#particles-js{
+  width:100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: -3;
+}
+
+.wave{
+  animation: waving-ani 2.5s infinite !important;
+  transform-origin: 70% 70% !important;
+  display: inline-block !important;
+}
+
 
 @keyframes logo-ani {
   0% {
@@ -804,5 +818,32 @@ input, textarea{
 
   100%{
     transform: translateY(0px);
+  }
+}
+
+@keyframes waving-ani {
+  0%{
+    transform: rotate(0deg) !important;
+  }
+  10%{
+    transform: rotate(14deg) !important;
+  }
+  20%{
+    transform: rotate(-8deg) !important;
+  }
+  30%{
+    transform: rotate(14deg) !important;
+  }
+  40%{
+    transform: rotate(-4deg) !important;
+  }
+  50%{
+    transform: rotate(10deg) !important;
+  }
+  60%{
+    transform: rotate(0deg) !important;
+  }
+  100%{
+    transform: rotate(0deg) !important ;
   }
 }
