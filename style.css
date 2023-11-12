@@ -6,6 +6,14 @@
   box-sizing: border-box;
 }
 
+p, li{
+  line-height: 25px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(172, 172, 172);
+}
+
 body {
   background-color: rgb(0, 0, 0) !important;
  overflow-x: hidden;
@@ -627,6 +635,8 @@ input, textarea{
   height: 900px !important;
   position: sticky !important;
   top: -250px !important;
+  z-index: -1 !important;
+  margin-bottom: 50px !important;
 
 }
 
@@ -652,10 +662,6 @@ input, textarea{
   background-color: rgb(26, 26, 26);
   border-radius: 10px;
   padding:25px !important;
-}
-
-.social-list div{
-
 }
 
 .yt-sub-count-label{
@@ -761,6 +767,11 @@ input, textarea{
   display: inline-block !important;
 }
 
+.carousel-control-prev-icon, .carousel-control-next-icon{
+  background-color: rgb(255, 193, 5);
+  padding: 20px;
+  border-radius: 10px;
+}
 
 @keyframes logo-ani {
   0% {
