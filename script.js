@@ -261,3 +261,5 @@ function visitorCountUpdater() {
 //Reset Couners
 
 /*https://api.counterapi.dev/v1/NimeshaJinarajadasaGithubIo/uniqueVisitorsCount/set?count=1*/
+
+/*https://api.counterapi.dev/v1/NimeshaJinarajadasaGithubIo/pageViewsCount/set?count=1*/
