@@ -21,34 +21,25 @@ $(".step01").click(function () {
 });
 
 $(".step02").click(function () {
-  $("#line-progress").css("width", "16.6%");
+  $("#line-progress").css("width", "25%");
   $(".section-content-2").addClass("active").siblings().removeClass("active");
 });
 
 $(".step03").click(function () {
-  $("#line-progress").css("width", "33.2%");
+  $("#line-progress").css("width", "50%");
   $(".section-content-3").addClass("active").siblings().removeClass("active");
 });
 
 $(".step04").click(function () {
-  $("#line-progress").css("width", "49.8%");
+  $("#line-progress").css("width", "75%");
   $(".section-content-4").addClass("active").siblings().removeClass("active");
 });
 
 $(".step05").click(function () {
-  $("#line-progress").css("width", "66.46%");
+  $("#line-progress").css("width", "100%");
   $(".section-content-5").addClass("active").siblings().removeClass("active");
 });
 
-$(".step06").click(function () {
-  $("#line-progress").css("width", "83%");
-  $(".section-content-6").addClass("active").siblings().removeClass("active");
-});
-
-$(".step07").click(function () {
-  $("#line-progress").css("width", "100%");
-  $(".section-content-7").addClass("active").siblings().removeClass("active");
-});
 
 //Event Count Down
 
