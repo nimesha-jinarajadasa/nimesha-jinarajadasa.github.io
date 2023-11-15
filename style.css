@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Inter:wght@100&family=Poppins:wght@500;600&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -413,14 +415,17 @@ input, textarea{
 
 .grade-list{
   list-style: none;
+  text-align: left !important;
+}
+
+.school-list{
+  list-style: none;
 }
 
 .grade-list li{
   padding-block: 2px;
 }
 
-
-/*Testing*/
 .process-wrapper {
 	margin:auto;
 	max-width:1080px;
@@ -467,10 +472,9 @@ input, textarea{
 #progress-bar-container li {
 	list-style:none;
 	float:left;
-	width:14.2%;
+	width:20%;
 	text-align:center;
 	color:rgb(255, 193, 5);
-	text-transform:uppercase;
 	font-size:11px;
 	cursor:pointer;
 	font-weight:400;
@@ -522,12 +526,12 @@ input, textarea{
 }
 
 #progress-bar-container #line {
-	width:85%;
+	width: 80%;
 	margin:auto;
 	background: #eee;
 	height:6px;
 	position:absolute;
-	left:7%;
+	left:10%;
 	top:57px;
 	z-index:1;
 	border-radius:10px;
@@ -614,7 +618,8 @@ input, textarea{
 .cs-image-border{
   width:500px !important;
   height: 260px !important;
-  margin-left: 60px !important;
+  margin-left: 50px !important;
+  margin-top: -30px !important;
   background: linear-gradient(to left, rgb(255, 193, 5,0.2) 0%,  rgb(27, 27, 27) 100% );
 
   border-radius: 10px;
@@ -625,21 +630,16 @@ input, textarea{
   z-index: -1;
 }
 
-.bmc-button{
-  margin-left: -350px;
-  margin-top: 150px;
-  
-}
 
-.bmc-button:hover{
-  box-shadow: 0px 0px 50px 15px rgba(255, 193, 5, 0.3);
-  transition: 0.5s;
+.bmc:hover{
+  box-shadow: 0px 0px 50px 15px rgba(255, 193, 5, 0.3) !important;
+  transition: 0.5s !important;
 }
 
 .all-followers-container{
   margin-top: 20px !important;
   background-color: rgb(26, 26, 26);
-  height: 900px !important;
+  height: auto !important;
   position: sticky !important;
   top: -250px !important;
   z-index: -1 !important;
@@ -653,7 +653,6 @@ input, textarea{
   letter-spacing: 5px;
   color: rgb(255, 255, 255);
   background :linear-gradient(40deg, rgb(46, 65, 173) 0%, rgb(201, 37, 37) 100% ) !important;
-
   padding: 10px 20px;
   border-radius: 10px;
 }
@@ -806,6 +805,7 @@ input, textarea{
 .statistics-header i{
   font-size: 30px;
 }
+
 
 @keyframes logo-ani {
   0% {
