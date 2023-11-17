@@ -166,14 +166,30 @@ var set = setInterval(linkedinfun, 1);
 
 
 //NJ Discord
+var njDiscordMembersCount = 0;
+
+var discordRequest = new XMLHttpRequest();
+
+discordRequest.onreadystatechange = function(){
+  if(discordRequest.readyState == 4 && discordRequest.status == 200){
+    var discordResponse = JSON.parse(discordRequest.responseText);
+    njDiscordMembersCount = discordResponse.approximate_member_count; //approximate_presence_count
+  }
+  else{
+    console.log(discordRequest.status);
+  }
+}
+
+discordRequest.open("GET", "https://discord.com/api/v9/invites/mTGpeMQf?with_counts=true&with_expiration=false", true);
+
+discordRequest.send();
 
 var njDiscord = document.getElementById("nj-members-count");
-var njDiscordMembersCount = 3;
 
 var discord_counter = 0;
 
 var discordfun = function discordup() {
-  if (ytSubscribersCount) {
+  if (njDiscordMembersCount > 0) {
     
     
     njDiscord.innerHTML = njDiscordMembersCount;
