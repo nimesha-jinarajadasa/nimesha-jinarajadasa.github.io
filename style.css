@@ -6,7 +6,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
+
 
 p, li{
   line-height: 30px;
@@ -242,13 +244,6 @@ body {
   
 }
 
-
-.about-texts{
-  animation-name: about-data-ani;
-  animation-duration: 3s;
-  animation-timing-function: ease-in-out;
-}
-
 .about-links{
   text-decoration: none;
   color: black;
@@ -472,7 +467,7 @@ input, textarea{
 #progress-bar-container li {
 	list-style:none;
 	float:left;
-	width:20%;
+	width:16.6%;
 	text-align:center;
 	color:rgb(255, 193, 5);
 	font-size:11px;
@@ -526,12 +521,12 @@ input, textarea{
 }
 
 #progress-bar-container #line {
-	width: 80%;
+	width: 84%;
 	margin:auto;
 	background: #eee;
 	height:6px;
 	position:absolute;
-	left:10%;
+	left:8%;
 	top:57px;
 	z-index:1;
 	border-radius:10px;
@@ -610,14 +605,15 @@ input, textarea{
   list-style:none;
 }
 .cs-image{
-  width: 490px;
+  width: 300px;
+  height: 350px;
   position: relative;
   margin-bottom: 50px !important;
 }
 
 .cs-image-border{
-  width:500px !important;
-  height: 260px !important;
+  width:300px !important;
+  height: 360px !important;
   margin-left: 50px !important;
   margin-top: -30px !important;
   background: linear-gradient(to left, rgb(255, 193, 5,0.2) 0%,  rgb(27, 27, 27) 100% );
@@ -845,16 +841,6 @@ input, textarea{
   }
 }
 
-@keyframes about-data-ani {
-  0%{
-    margin-left: -500px;
-    opacity: 0;
-  }
-  100%{
-    margin-left: 0px;
-    opacity: 1;
-  }
-}
 
 @keyframes follow-ani {
   0%{
@@ -866,29 +852,4 @@ input, textarea{
   }
 }
 
-@keyframes waving-ani {
-  0%{
-    transform: rotate(0deg) !important;
-  }
-  10%{
-    transform: rotate(14deg) !important;
-  }
-  20%{
-    transform: rotate(-8deg) !important;
-  }
-  30%{
-    transform: rotate(14deg) !important;
-  }
-  40%{
-    transform: rotate(-4deg) !important;
-  }
-  50%{
-    transform: rotate(10deg) !important;
-  }
-  60%{
-    transform: rotate(0deg) !important;
-  }
-  100%{
-    transform: rotate(0deg) !important ;
-  }
-}
+

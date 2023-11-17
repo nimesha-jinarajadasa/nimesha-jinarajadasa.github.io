@@ -21,23 +21,28 @@ $(".step01").click(function () {
 });
 
 $(".step02").click(function () {
-  $("#line-progress").css("width", "25%");
+  $("#line-progress").css("width", "20%");
   $(".section-content-2").addClass("active").siblings().removeClass("active");
 });
 
 $(".step03").click(function () {
-  $("#line-progress").css("width", "50%");
+  $("#line-progress").css("width", "40%");
   $(".section-content-3").addClass("active").siblings().removeClass("active");
 });
 
 $(".step04").click(function () {
-  $("#line-progress").css("width", "75%");
+  $("#line-progress").css("width", "60%");
   $(".section-content-4").addClass("active").siblings().removeClass("active");
 });
 
 $(".step05").click(function () {
-  $("#line-progress").css("width", "100%");
+  $("#line-progress").css("width", "80%");
   $(".section-content-5").addClass("active").siblings().removeClass("active");
+});
+
+$(".step06").click(function () {
+  $("#line-progress").css("width", "100%");
+  $(".section-content-6").addClass("active").siblings().removeClass("active");
 });
 
 
@@ -76,7 +81,8 @@ const YTAPIKey = "AIzaSyATFcx9i93hcMuwXStS9S3gSpqGWby0Jcg";
 const ytchannelId = "UCN4fELPxNvqoYlcfmgqlzCw";
 const subscriberCount = document.getElementById("yt-sub-count");
 
-var ytSubscribersCount = 355;
+var ytSubscribersCount;
+
 
 let getdata = () => {
   fetch(
@@ -87,7 +93,7 @@ let getdata = () => {
     })
     .then((data) => {
       console.log(data);
-      ytSubscribersCount = parseInt(
+        ytSubscribersCount = parseInt(
         data["items"][0].statistics.subscriberCount
       );
     });
@@ -97,57 +103,125 @@ getdata();
 
 var counter = document.getElementById("yt-sub-count");
 
-var i = 0;
+var yt_counter = 0;
 
-var sub = function up() {
-  if (ytSubscribersCount == i) {
-    clearInterval(sub);
+var ytfun = function ytup() {
+  if (ytSubscribersCount) {
+    counter.innerHTML = ytSubscribersCount;
+    clearInterval(ytfun);
   } else {
-    i = i + 1;
-    counter.innerHTML = i;
+    yt_counter = yt_counter + 1;
+    counter.innerHTML = yt_counter;
   }
 };
 
-var set = setInterval(sub, 1);
+var set = setInterval(ytfun, 1);
 
 //CoDeKu
 
 var codeku = document.getElementById("codeku-followers-count");
-var codekuFollowersCount = 230;
-codeku.innerHTML = codekuFollowersCount;
+var codekuFollowersCount = 292;
+
+var codeku_counter = 0;
+
+var codekufun = function codekuup() {
+  if (ytSubscribersCount) {
+    
+    codeku.innerHTML = codekuFollowersCount;
+
+    clearInterval(codekufun);
+
+  } else {
+    codeku_counter = codeku_counter + 1;
+    codeku.innerHTML = codeku_counter;
+  }
+};
+
+var set = setInterval(codekufun, 1);
+
+
 
 //NJ Linkedin
 
 var njLinkedin = document.getElementById("nj-followers-count");
-var njLinkedinFollowersCount = 2703;
-njLinkedin.innerHTML = njLinkedinFollowersCount;
+var njLinkedinFollowersCount = 2752;
+
+var linkedin_counter = 0;
+
+var linkedinfun = function linkedinup() {
+  if (ytSubscribersCount) {
+    
+    njLinkedin.innerHTML = njLinkedinFollowersCount;
+
+    clearInterval(linkedinfun);
+
+  } else {
+    linkedin_counter = linkedin_counter + 1;
+    njLinkedin.innerHTML = linkedin_counter;
+  }
+};
+
+var set = setInterval(linkedinfun, 1);
+
+
 
 //NJ Discord
 
 var njDiscord = document.getElementById("nj-members-count");
-var njDiscordMembersCount = 0;
-njDiscord.innerHTML = njDiscordMembersCount;
+var njDiscordMembersCount = 3;
+
+var discord_counter = 0;
+
+var discordfun = function discordup() {
+  if (ytSubscribersCount) {
+    
+    
+    njDiscord.innerHTML = njDiscordMembersCount;
+
+    clearInterval(discordfun);
+
+  } else {
+    discord_counter = discord_counter + 1;
+    njDiscord.innerHTML = discord_counter;
+  }
+};
+
+var set = setInterval(discordfun, 1);
+
 
 //All Folowers
 
 var allFollowers = document.getElementById("all-followers");
-var allFollowersCount =
-  ytSubscribersCount +
-  codekuFollowersCount +
-  njLinkedinFollowersCount +
-  njDiscordMembersCount;
-allFollowers.innerHTML = allFollowersCount;
+var j = 0;
+
+var af = function allup() {
+  if (ytSubscribersCount) {
+    
+    var allFollowersCount =
+    ytSubscribersCount +
+    codekuFollowersCount +
+    njLinkedinFollowersCount +
+    njDiscordMembersCount;
+    allFollowers.innerHTML = allFollowersCount;
+
+    clearInterval(af);
+
+  } else {
+    j = j + 1;
+    allFollowers.innerHTML = j;
+  }
+};
+
+var set = setInterval(af, 1);
+
+
+
 
 //Visitors Counter
 
 var uniqueVistorsToday = document.getElementById("uvt");
 var viewsToday = document.getElementById("vt");
 
-var uniqueVistorsThisWeek = document.getElementById("uvtw");
-var viewsThisWeek = document.getElementById("vtw");
-
-var uniqueVistorsThisMonth = document.getElementById("uvtm");
-var viewsThisMonth = document.getElementById("vtm");
 
 visitorCountUpdater();
 
@@ -254,3 +328,6 @@ function visitorCountUpdater() {
 /*https://api.counterapi.dev/v1/NimeshaJinarajadasaGithubIo/uniqueVisitorsCount/set?count=1*/
 
 /*https://api.counterapi.dev/v1/NimeshaJinarajadasaGithubIo/pageViewsCount/set?count=1*/
+
+
+
