@@ -6,9 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
-
 
 p, li{
   line-height: 30px;
@@ -797,7 +795,6 @@ input, textarea{
   
 }
 
-
 .statistics-header i{
   font-size: 30px;
 }
@@ -807,6 +804,23 @@ input, textarea{
   border-radius: 10px;
   border:2px solid rgb(48,48,48);
   padding: 10px !important;
+}
+
+.services-list{
+  background-color: rgb(48,48,48,0.2);
+  border-radius: 0 10px 10px 0;
+  
+}
+
+.services-list li {
+  line-height: 25px !important;
+}
+
+.pkg-prices{
+  background: linear-gradient(120deg, rgb(255, 193, 5,0.1) 0%,  rgb(27, 27, 27,0.1) 100% );
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid rgb(255, 193, 5) ;
 }
 
 /*
