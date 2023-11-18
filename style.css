@@ -22,7 +22,7 @@ h1{
 
 body {
   background-color: black !important;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 
 }
 
@@ -55,8 +55,8 @@ body {
 }
 
 .contact-btn:hover {
-  border: 2px solid rgb(255, 193, 5) !important;
-  background-color: rgb(255, 193, 5);
+  border: 2px solid rgb(241, 241, 241) !important;
+  background-color: rgb(255, 255, 255);
   border-radius: 5px;
   color: black !important;
   transition: 0.5s ease-in-out;
@@ -125,6 +125,13 @@ body {
   font-size: 40px;
   color: rgb(255, 193, 5);
 }
+
+.exbtn{
+  font-weight: 500 !important;
+  font-size:18px !important;
+  padding: 10px !important;
+}
+
 .exbtn:hover {
   color: rgba(255, 255, 255, 1);
   box-shadow: 0px 0px 50px 15px rgba(255, 193, 5, 0.3);
@@ -219,11 +226,11 @@ body {
 }
 
 .about-image {
-  width: 500px;
-  height: 250px;
+  /* width: 500px;
+  height: 250px; */
   border-radius: 10px;
-  margin-top: 20px;
-  margin-left: 20px;
+  /* margin-top: 20px;
+  margin-left: 20px; */
 }
 
 .ab-image-border{
@@ -603,8 +610,8 @@ input, textarea{
   list-style:none;
 }
 .cs-image{
-  width: 300px;
-  height: 350px;
+  max-width: 300px;
+  max-height: 350px;
   position: relative;
   margin-bottom: 50px !important;
 }
@@ -689,18 +696,17 @@ input, textarea{
   transition: 0.5s;
 }
 
-.evt-img{
-  width: 490px;
+.evt-img , .cs-image, .about-image{
+  /* width: 490px; */
+  border: 2px solid rgb(255, 193, 5,0.5);
+   padding: 20px; background: linear-gradient(to right, rgb(255, 193, 5,0.2) 0%,  rgb(27, 27, 27,0.2) 100% );
+   border-radius: 30px !important;
 }
 
-.event-btn:hover{
-  box-shadow: 0px 0px 50px 15px rgba(255, 193, 5, 0.3);
-  transition: 0.5s;
-}
 
 .event-image-border{
-  width:490px !important;
-  height: 260px !important;
+  /* width:490px !important;
+  height: 260px !important; */
   background: linear-gradient(to left, rgb(255, 193, 5,0.2) 0%,  rgb(27, 27, 27) 100% );
   border-radius: 10px;
   border: 2px solid rgb(255, 193, 5);
@@ -822,6 +828,8 @@ input, textarea{
   padding: 10px;
   border: 2px solid rgb(255, 193, 5) ;
 }
+
+
 
 /*
 @keyframes logo-ani {
