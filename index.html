@@ -349,15 +349,53 @@
           <p>Central College Kuliyapitiya</p>
           </div>
           <br>
+
+          <div class="row d-flex justify-content-center">
+            <div class="sch-results col-12 col-md-6">
+              <p class="p-2 ">O/L Examination(Grade 11)</p>
+              <ul class="school-list">
+                <li><i class="bi bi-award text-warning"></i>
+                  <span class="bg-warning text-dark fw-bold" style="border-radius: 50%; padding-inline: 5px; padding-block: 5px;">9As</span></li>
+              </ul>
+  
+              <p class="p-2 ">A/L Examination(Grade 13)</p>
+              <ul class="school-list">
+                <li><i class="bi bi-award text-warning"></i> Maths: <span class="bg-warning text-dark fw-bold" style="border-radius: 50%; padding-inline: 5px; padding-block: 1px;">A</span></li>
+                <li><i class="bi bi-award text-warning"></i> Physics: <span class="bg-warning text-dark fw-bold" style="border-radius: 50%; padding-inline: 5px; padding-block: 1px;">B</span></li>
+                <li><i class="bi bi-award text-warning"></i> Chemistry: <span class="bg-warning text-dark fw-bold" style="border-radius: 50%; padding-inline: 5px; padding-block: 1px;">B</span></li>
+              </ul>
+            </div>
+          </div>
+    
+          
         </div>
         
         <div class="section-content section-content-2">
+
+          <h3 class="text-center p-2"><i class="bi bi-mortarboard"></i> First Degree 
+          </h3>
 
           <div class="d-flex justify-content-center align-items-center gap-3">
             <img src="assets/images/uom.png" width="150px" height="150px">
             <p>BSc(Hons) in IT/CS Engineering at <b>University of Moratuwa(UOM)</b>, Sri Lanka</p>
             </div>
+
+            
+            <div class="row d-flex justify-content-center">
+             
+              <div class="sch-results col-6 col-md-3">
+                <div class="d-flex justify-content-center align-items-center">
+                  
+                  <ul class="school-list text-center">
+                    <br>
+                    <li style="margin-left: -35px !important;"><i class="bi bi-award text-warning "></i>GPA : 
+                      <span class="bg-warning text-dark fw-bold" style="border-radius: 50%; padding-inline: 5px; padding-block: 5px;">3.69</span></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
         </div>
+        
         
         <div class="section-content section-content-3">
           <h3 class="text-center p-2"><i class="bi bi-briefcase"></i> Internship 
@@ -427,6 +465,7 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <h3 class="text-center p-2"><i class="bi bi-filetype-java"></i> Freelancing</h3>
+                <br><br>
                 <p>Upwork(new-bie)</p>
                   <br>
                   <div class="row">
@@ -441,8 +480,8 @@
               </div>
               <div class="carousel-item">
                 <!--Visiting Lecturer-->
-              <h5 class="text-center p-2"><i class="bi bi-pen"></i> External/Visiting Lecturer - Weekend
-              </h5>
+              <h3 class="text-center p-2"><i class="bi bi-pen"></i> External/Visiting Lecturer - Weekend
+              </h3>
 
               <br><br>
               <p>Open University Of Sri Lanka</p>
@@ -773,14 +812,13 @@
          reset: true,
          distance: '60px',
          duration: 2000,
-         delay: 0
-
+         delay: 0,
         });
 
         //Navbar
         ScrollReveal().reveal('.navbar-brand', { origin: 'left',reset: false,});
-        ScrollReveal().reveal('.nav-item', { origin: 'right', reset: false, interval: 50, delay: 200});
-        ScrollReveal().reveal('.navbar-brand', { origin: 'left',reset: false,});
+        ScrollReveal().reveal('.nav', { origin: 'right', reset: false, interval: 50, delay: 200, mobile:false});
+        ScrollReveal().reveal('.nav-item', { origin: 'right', reset: false, interval: 50, delay: 200, mobile:false});
 
         //Hero section
         /*ScrollReveal().reveal('.hero-image, .shape ,.shape-2', { origin: 'bottom', reset: true,});*/
@@ -821,7 +859,7 @@
          ScrollReveal().reveal('.social-statistics' ,{ origin: 'right', reset: true, duration: 2000, delay:100});
 
          //Page statistics
-         ScrollReveal().reveal('.page-statistics' ,{ origin: 'bottom', reset: true, duration: 2000, delay:100});
+         ScrollReveal().reveal('.page-statistics' ,{ origin: 'bottom', reset: true, duration: 2000});
         
 
     </script>

@@ -802,6 +802,13 @@ input, textarea{
   font-size: 30px;
 }
 
+.sch-results{
+  background-color: rgb(27, 27, 27,0.5);
+  border-radius: 10px;
+  border:2px solid rgb(48,48,48);
+  padding: 10px !important;
+}
+
 /*
 @keyframes logo-ani {
   0% {
