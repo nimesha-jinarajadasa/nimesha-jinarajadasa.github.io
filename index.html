@@ -37,6 +37,7 @@
 
   </head>
   <body>
+    <div class="viewport">
     <!--Navigation Bar-->
     <div class="hero"></div>
     <div id="particles-js"></div>
@@ -48,7 +49,7 @@
           class="navbar-brand text-warning fs-2 logo"
           style="font-weight: 500"
           href="#"
-          ><img src="assets/images/logo.png"  class="image-fliud" alt="" style="width:200px"></a
+          ><img src="assets/images/logo.png"  class="image-fliud" alt="" style="width:225px"></a
         >
 
         <button
@@ -85,8 +86,8 @@
             <div class="nav-item d-flex justify-content-center">
               <a class="nav-link fc nav" href="#events-section">Events</a>
             </div>
-            <div class="nav-item nav d-flex justify-content-center">
-              <a class="nav-link fc contact-btn ms-lg-2 ps-2 pe-2" href="#social-section"
+            <div class="nav-item d-flex justify-content-center">
+              <a class="nav-link fc contact-btn" href="#social-section"
                 >Social</a
               >
             </div>
@@ -96,20 +97,15 @@
     </nav>
 
     <!--Hero Section-->
-    <div class="container">
-      <div class="row d-flex align-items-center justify-content-center">
-        <div
-          class="img-fluid hero-image hi col-md-5 col-10 offset-1 offset-1 offset-md-0 mt-md-3 mt-0 mt-5"
-        >
-          <div class="shape"></div>
-          <div class="shape-2"></div>
-        </div>
+    <div class="container d-flex align-content-center viewport-2">
+      <div class="row d-flex align-items-center">
+
         
-        <div class="hero-texts col-md-7 container col-10 offset-1 offset-md-0">
+        <div class="hero-texts col-md-8 col-10 offset-1 offset-md-0 order-2 order-md-1">
           <h2 class="text-light">Hi! <span class="wave">👋</span> I'm</h2>
           <h2 class="text-light">Nimesha Jinarajadasa</h2>
           <div class="fw-bold post">
-            <span class="typing-text"></span>
+            <span class="typing-text fw-bold"></span>
           </div>
           <h5 class="text-light">based in Colombo, Sri Lanka</h5>
           <br />
@@ -157,21 +153,30 @@
             Journey towards CSA
           </div>
         </div>
+
+        <div
+        class="img-fluid hero-image hi col-md-4 col-10 offset-1 offset-1 offset-md-0 mt-md-3 mt-0 mt-5 order-1 order-md-2" 
+      >
+        <div class="shape"></div>
+        <div class="shape-2"></div>
+      </div>
+
       </div>
     </div>
+  </div>
 
     <!--About Section-->
-    <br />
 
     <div class="container" id="about-section">
       <div class="row">
         <div class="col-10 offset-1  col-md-12 offset-md-0">
           <hr class="line" />
 
-        <h1 class="text-center text-light section-header">About Me</h1>
-        <p class="section-desc">In the spirit of sharing a piece of my world with you, this section is a window into my journey, interests, and the experiences that shape who I am.</p>
+        <h1 class="text-center text-light section-header fw-bold">ABOUT ME</h1>
+        <p class="section-desc" style="color: rgb(172, 172, 172) !important;">In the spirit of sharing a piece of my world with you, this section is a window into my journey, interests, and the experiences that shape who I am.</p>
         
         <hr class="line" />
+        <br>
         </div>
         
         <br><br>
@@ -219,27 +224,27 @@
         </div>
       </div>
   </div>
-  <br>
+
 
     <!--Services Section-->
     <div class="container" id="services-section">
       <div class="row">
         <div class="col-10 offset-1 col-md-12 offset-md-0 ">
           <hr class="line" />
-          <h1 class="text-center text-light section-header">Services</h1>
-          <p class="section-desc">A quick overview of the valuable solutions and expertise I provide, ensuring you can easily discover how I can meet your needs.</p>
+          <h1 class="text-center text-light section-header fw-bold">SERVICES</h1>
+          <p class="section-desc" style="color: rgb(172, 172, 172) !important;">A quick overview of the valuable solutions and expertise I provide, ensuring you can easily discover how I can meet your needs.</p>
           <hr class="line" />
         </div>
         <br><br>
 
         <div class="col-10 offset-1 col-md-12 offset-md-0">
+          <br>
           <h3 class="text-warning services-heading">Empower your IT skills with my expertise!</h3>
 
         <p class="text-light pt-4 pb-5 services-data" style="color: rgb(172, 172, 172) !important; line-height: 24px;">Join our immersive programs for hands-on learning in DevOps, Software Engineering, and cutting-edge technologies. Experience dynamic workshops, webinars, and community sessions fostering innovation. Explore Software Development Trends through public lectures, engage in Q&A sessions, receive personalized coaching and career guidance. Collaborate in group sessions, benefit from cloud solutions consultation, and advance your career in the evolving tech landscape.</p>  
 
         </div>
 
-        <br><br>
         <div class="col-10 offset-1 d-flex justify-content-center">
 
           <img src="assets/images/sessions.jpg" id="sessions_image" class="cs-image services_image img-fluid" alt="">
@@ -253,9 +258,8 @@
             <h3 class="text-warning"><i class="bi bi-gift-fill"></i> Free Sessions</h3>
 
               <br>
-              <div>
                 <ul class="text-light p-4 services-list" style="border-left: 2px dashed  rgb(255, 193, 5); list-style: none;">
-                  <div>
+                
                   <li><i class="bi bi-check-circle-fill text-success fs-5"></i> Educational Workshops for Schools and Universities
                   </li>
                   <br>
@@ -269,9 +273,8 @@
                   <br>
                   <li><i class="bi bi-check-circle-fill text-success fs-5"></i> Interactive Q&A Sessions for Aspiring Software Engineers
                   </li>
-                </div>
+              
                 </ul>
-              </div>
           </div>
 
           <div class="col-10 offset-1 col-md-5 offset-md-0 p-5 rounded-3 services-package-2" style="background-color: rgb(26,26,26) !important;">
@@ -302,7 +305,7 @@
           </div>
 
           
-          <div class="row booking col-10 offset-1 col-md-10 offset-md-1 p-2" style="background-color: rgb(28,28,28); border-radius: 10px;">
+          <div class="row booking col-10 offset-1 col-md-12 offset-md-0 p-2 me-2" style="background-color: rgb(28,28,28); border-radius: 10px;">
 
             <h3 class="text-center text-warning">
               <br>
@@ -322,7 +325,7 @@
 
                 <div class="col-12">
                   <a href="https://wa.me/qr/555SCHOBZDU7P1" target="_blank"  class="tex-dark" style="text-decoration: none !important;">
-                    <button class="btn btn-warning contact-btn fw-bold d-flex align-items-center"><i class="bi bi-whatsapp fs-2 me-2"></i> +94 70 311 2633</button>
+                    <button class="btn btn-warning booking-btn fw-bold d-flex align-items-center"><i class="bi bi-whatsapp fs-2 me-2"></i> +94 70 311 2633</button>
                   </a>
                 </div>
               </div>
@@ -344,7 +347,7 @@
 
                 <div class="col-12">
                   <a href="https://www.linkedin.com/in/nimeshmhj/" target="_blank"  class="tex-dark" style="text-decoration: none !important;">
-                    <button class="btn btn-warning contact-btn fw-bold d-flex align-items-center"><i class="bi bi-linkedin fs-2 me-2"></i> Linkedin</button>
+                    <button class="btn btn-warning booking-btn fw-bold d-flex align-items-center"><i class="bi bi-linkedin fs-2 me-2"></i> Linkedin</button>
                     <br>
                   </a>
                 </div>
@@ -361,8 +364,8 @@
         
         <div class="col-10 offset-1 col-md-12 offset-md-0">
           <hr class="line" />
-          <h1 class="text-center text-light section-header">Journey</h1>
-          <p class="section-desc">A chronological journey through my professional and educational milestones, providing a comprehensive view of my career and qualifications.</p>
+          <h1 class="text-center text-light section-header fw-bold">JOURNEY</h1>
+          <p class="section-desc" style="color: rgb(172, 172, 172) !important;">A chronological journey through my professional and educational milestones, providing a comprehensive view of my career and qualifications.</p>
           <hr class="line" />
         </div>
 
@@ -586,8 +589,8 @@
       <div class="row ">
         <div class="col-10 offset-1 col-md-12 offset-md-0">
           <hr class="line" />
-          <h1 class="text-center text-light section-header">Upcoming Events</h1>
-          <p class="section-desc">Exciting events await! Join me for upcoming experiences that promise inspiration and connection. Mark your calendar, and let's make memories together. See you there!</p>
+          <h1 class="text-center text-light section-header fw-bold">UPCOMING EVENTS</h1>
+          <p class="section-desc" style="color: rgb(172, 172, 172) !important;">Exciting events await! Join me for upcoming experiences that promise inspiration and connection. Mark your calendar, and let's make memories together. See you there!</p>
           <hr class="line" />
         </div>
         <br><br>
@@ -595,7 +598,7 @@
         <div class="event-wrapper text-light d-block d-md-flex">
           <div class="event-desc col-10 offset-1 col-md-6 offset-md-0">
 
-            <div class="event-date text-center">On 19 <sup>th </sup>November 2023 at 6:00 PM</div>
+            <div class="event-date text-center">On 19 <sup>th </sup>November 2023 at 6:00 PM <span class="badge rounded-pill text-bg-danger">Ended</span></div>
             <br>
             <div class="event-countDown">
               <div>
@@ -623,24 +626,26 @@
             <hr class="line" />
 
             <h3 class="text-warning">Harnessing the power of WebAssembly</h3>
-
+            
             <p class="p-4" style="border-left: 2px dashed  rgb(255, 193, 5);">Kubernetes Community Days Sri Lanka (KCD Sri Lanka) 2023 is a community-organized event, with the support of the Cloud Native Computing Foundation (CNCF), aimed at fostering the growth and sustainability of the Kubernetes and cloud-native community. This remarkable gathering brings together adopters and technologists from open source and cloud-native communities, providing valuable opportunities for education, collaboration, and networking.</p>
 
-            <div class="btn btn-warning exbtn">
-              <a href="https://www.youtube.com/watch?v=pK2NDvTT_Vk" target="_blank"  style="text-decoration: none; color: black">Notify Me</a>
-            </div>
+            <button class="btn btn-warning exbtn">
+              <a href="https://www.youtube.com/watch?v=pK2NDvTT_Vk" target="_blank"  style="text-decoration: none; color: black">Watch</a>
+            </button>
            
           </div>
 
           <div class="event-image col-10 offset-1 col-md-6  offset-md-0 d-flex align-items-center">
 
-            <img src="assets/images/event.jpg" class="evt-img img-fluid">
+            <div>
+              <img src="assets/images/event.jpg" class="evt-img img-fluid col-12">
             <!-- <div class="event-image-border"></div> -->
             
-            <div class="event-yt">
+            <div class="event-yt offset-2 col-8 text-center mt-4">
               <a href="https://www.youtube.com/watch?v=pK2NDvTT_Vk" target="_blank"  style="text-decoration: none; color: rgb(255, 193, 5);">via KCD Sri Lanka YouTube Channel</a></div>
-          
-          </div>
+             </div>
+            </div>
+            
         </div>
       </div>
     </div>
@@ -652,8 +657,8 @@
 
         <div class="col-10 offset-1 col-md-12 offset-md-0">
           <hr class="line" />
-        <h1 class="text-center text-light section-header">Connect With Me</h1>
-        <p class="section-desc">Explore my social media hub for the latest updates, behind-the-scenes moments, and engaging content. Connect with me on various platforms and join the conversation. Let's stay in touch! </p>
+        <h1 class="text-center text-light section-header fw-bold">CONNECT WITH ME</h1>
+        <p class="section-desc" style="color: rgb(172, 172, 172) !important;">Explore my social media hub for the latest updates, behind-the-scenes moments, and engaging content. Connect with me on various platforms and join the conversation. Let's stay in touch! </p>
         <hr class="line" />
         </div>
         
@@ -673,7 +678,7 @@
               <div class="youtube-section text-light" style="padding: 8% !important;">
                 <h2><span class="fw-bold" style="color: rgb(205, 32, 31);">YouTube</span> - <a href="https://www.youtube.com/@LifeCapturedchathunimesh?sub_confirmation=1 " style="text-decoration: none; color: rgb(255, 193, 5);" target="_blank">Life Captured</a></h2>
                 <br>
-                <img src="assets/images/yt.png" class="col-12 rounded-3"alt="">
+                <img src="assets/images/yt.png" class="col-12 rounded-3" alt="">
                 <br><br>
                 <p class="service-desc">Welcome to our YouTube channel! Here, we share the joys and adventures of our everyday life with our families, and we invite you to join us on this exciting journey. 
                   As a married couple, we believe that family is the most important thing in life. We love spending time with our loved ones and creating memories that will last a lifetime.
@@ -690,7 +695,7 @@
               <div class="youtube-section text-light" style="padding: 8% !important;">
                 <h2><span class="fw-bold" style="color: rgb(10, 102, 194);">LinkedIn</span> - <a href="https://www.linkedin.com/company/co-de-ku/" style="text-decoration: none; color: rgb(255, 193, 5);" target="_blank"> CoDeKu</a></h2>
               <br>
-              <img src="assets/images/codeku.png" class="col-12 rounded-3"alt="">
+              <img src="assets/images/codeku.png" class="col-12 rounded-3" alt="">
               <br><br>
               <p>Welcome to CoDeKu on LinkedIn, your go-to source for enriching discussions and insights into the world of cloud-native practices and DevOps. Join our community to stay updated on the latest trends, best practices, and innovations in cloud computing and DevOps methodologies. Whether you're an enthusiast, practitioner, or industry professional, CoDeKu fosters a collaborative environment for sharing knowledge, networking, and exploring the dynamic landscape of cloud-native technologies. Elevate your skills and connect with like-minded individuals passionate about transforming the way we build, deploy, and manage software in the cloud.
               </p>
@@ -707,7 +712,7 @@
               <div class="youtube-section text-light" style="padding: 8% !important;">
                 <h2><span class="fw-bold" style="color: rgb(10, 102, 194);">LinkedIn</span> - <a href="https://www.linkedin.com/in/nimeshmhj/" style="text-decoration: none; color: rgb(255, 193, 5);" target="_blank"> Nimesha Jinarajadasa</a></h2>
               <br>
-              <img src="assets/images/nj_linkedin.png" class="col-12 rounded-3"alt="">
+              <img src="assets/images/nj_linkedin.png" class="col-12 rounded-3" alt="">
               <br><br>
               <p>Welcome to my LinkedIn profile! I am Nimesha Jinarajadasa, a seasoned Lead Software Engineer specializing in DevOps and Cloud technologies at KodeKLoud. With over 5.5 years of hands-on experience, I bring expertise in building robust software solutions. My journey includes valuable contributions to the Technology team at IFS R&D International, where I honed my skills and earned a reputation for innovation. Join me on this professional adventure as we explore the intersection of software engineering, DevOps, and the limitless possibilities of the cloud.
               </p>
@@ -724,7 +729,7 @@
               <div class="youtube-section text-light" style="padding: 8% !important;">
                 <h2><span class="fw-bold" style="color: rgb(114, 137, 218);">Discord</span> - <a href="https://discord.gg/mTGpeMQf" style="text-decoration: none; color: rgb(255, 193, 5);" target="_blank"> Cloud Heroes</a></h2>
               <br>
-              <img src="https://assets-global.website-files.com/625fe439fb70a9d901e138ab/62e7de80f30846346e5910f0_photo_2022-01-08_22-08-17.jpg" class="col-12 rounded-3"alt="">
+              <img src="https://assets-global.website-files.com/625fe439fb70a9d901e138ab/62e7de80f30846346e5910f0_photo_2022-01-08_22-08-17.jpg" class="col-12 rounded-3" alt="">
               <br><br>
               <p>Welcome to our Cloud and DevOps Discord community! Join us for insightful discussions on a wide range of tech-related topics, from front-end development to cloud-native practices. Engage with experienced professionals, get DevOps help, and learn from pros in containerization and infrastructure. Whether you're a DevOps engineer, cloud enthusiast, or programmer, our server provides a collaborative space to share knowledge and stay updated on the latest trends in the industry. Connect with like-minded individuals, participate in forums, and elevate your skills in the ever-evolving world of Cloud and DevOps.
               </p>
@@ -751,7 +756,7 @@
       <i class="bi bi-chat-square-heart-fill all-followers-icon"></i>
       <div class="all-followers-count fs-1" id="all-followers">0</div>
       <br>
-      <h2 class="text-warning">All Followers</i></i></h2>
+      <h2 class="text-warning">All Followers</h2>
       <p class="text-center">Join the social fiesta! 🎉 Dive into the vibes, laughter, and daily adventures. Ready to spice up your feed? Hit that follow button and let's turn the ordinary into extraordinary together! 🌟🚀</p>
 
    
@@ -760,7 +765,7 @@
 
           <a href="https://www.youtube.com/@LifeCapturedchathunimesh?sub_confirmation=1 " style="text-decoration: none; color: white;" target="_blank">
 
-            <i class="bi bi-youtube fs-2 me-2" style="color: rgb(205, 32, 31);"></i>Life Captured<br><span class="yt-sub-count-label"><span id="yt-sub-count" class="text-warning">0</span> Subscribers</span>
+            <i class="bi bi-youtube fs-2 me-2" style="color: rgb(205, 32, 31);"></i><span class="fw-bold">Life Captured</span><br><span class="yt-sub-count-label"><span id="yt-sub-count" class="text-warning">0</span> Subscribers</span>
           </a>
 
         </div>
@@ -770,7 +775,7 @@
         
         <a href="https://www.linkedin.com/company/co-de-ku/" style="text-decoration: none; color: white;" target="_blank">
 
-          <i class="bi bi-linkedin fs-2 me-2" style="color: rgb(10, 102, 194);"></i>CoDeKu<br><span class="yt-sub-count-label"><span id="codeku-followers-count" class="text-warning">0</span> followers</span>
+          <i class="bi bi-linkedin fs-2 me-2" style="color: rgb(10, 102, 194);"></i><span class="fw-bold">CoDeKu</span><br><span class="yt-sub-count-label"><span id="codeku-followers-count" class="text-warning">0</span> followers</span>
   
         </a>
 
@@ -780,7 +785,7 @@
         <div>
         <a href="https://www.linkedin.com/in/nimeshmhj/" style="text-decoration: none; color: white;" target="_blank">
 
-          <i class="bi bi-linkedin fs-2 me-2" style="color: rgb(10, 102, 194);"></i>Nimesha Jinarajadasa <br><span class="yt-sub-count-label"><span id="nj-followers-count" class="text-warning">0</span> followers</span>
+          <i class="bi bi-linkedin fs-2 me-2" style="color: rgb(10, 102, 194);"></i><span class="fw-bold">Nimesha Jinarajadasa</span> <br><span class="yt-sub-count-label"><span id="nj-followers-count" class="text-warning">0</span> followers</span>
   
         </a>
 
@@ -790,7 +795,7 @@
         <div>
           <a href="https://discord.gg/mTGpeMQf" style="text-decoration: none; color: white;" target="_blank">
 
-            <i class="bi bi-discord fs-2 me-2" style="color: rgb(114, 137, 218);"></i>Cloud Heroes<br><span class="yt-sub-count-label"><span id="nj-members-count" class="text-warning">0</span> Members</span>
+            <i class="bi bi-discord fs-2 me-2" style="color: rgb(114, 137, 218);"></i><span class="fw-bold">Cloud Heroes</span><br><span class="yt-sub-count-label"><span id="nj-members-count" class="text-warning">0</span> Members</span>
           </a>
         </div>
       </div>
@@ -809,7 +814,7 @@
             <p style="color:white !important;"><i class="bi bi-person-plus-fill"></i> Unique Visitors  : <span class="fw-bold text-warning" id="uvt">0</span></p>
             <p style="color:white !important;"><i class="bi bi-eye-fill"></i> Page Views : <span class="fw-bold text-warning" id="vt">0</span></p>
           </div>
-
+          
         </div>
       </div>
     </div>
