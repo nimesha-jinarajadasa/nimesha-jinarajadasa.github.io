@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Inter";
 }
 
 p, li, .service-desc{
@@ -22,8 +23,16 @@ h1{
 
 body {
   background-color: black !important;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 
+}
+
+.viewport{
+  min-height: 100vh !important;
+}
+
+.viewport-2{
+  min-height: 80vh !important;
 }
 
 .fixed-navbar{
@@ -32,9 +41,9 @@ body {
 }
 
 .fc {
-  font-size: 15px !important;
+  font-size: 18px !important;
   color: aliceblue !important;
-  font-family: "Poppins";
+  font-weight: 500  !important;
 }
 
 .logo {
@@ -52,6 +61,8 @@ body {
   border: 2px solid rgb(255, 193, 5) !important;
   border-radius: 5px;
   color: rgb(255, 193, 5);
+  padding-inline: 10px !important;
+  margin-left:10px;
 }
 
 .contact-btn:hover {
@@ -90,10 +101,9 @@ body {
 }
 
 .hero-row {
-  height: 100vh;
+  /* height: 100vh;
   display: flex;
-  align-items: center;
- 
+  align-items: center; */
 }
 
 .hero-texts {
@@ -165,7 +175,7 @@ body {
 .shape {
   width: 60%;
   height: 60%;
-  margin-left: -100px;
+  margin-left: -120px;
   margin-top: 50px;
   border: 2px solid rgb(255, 193, 5);
   position: relative;
@@ -177,9 +187,9 @@ body {
 .shape-2 {
   width: 60%;
   height: 60%;
-  margin-left: -300px;
+  margin-left: -280px;
   margin-top: 50px;
-  background: linear-gradient(to right, rgb(255, 193, 5,0.5) 0%,  rgb(27, 27, 27) 100% );
+  background: linear-gradient(240deg, rgb(255, 193, 5,0.5) 0%,  rgb(27, 27, 27,0.1) 100% );
   position: relative;
   transform: rotate(45deg);
   border-radius: 10px;
@@ -205,16 +215,7 @@ body {
   display: flex;
   justify-content: center;
 }
-.about-fade {
-  font-size: 80px;
-  color: rgb(255, 193, 5) !important;
-  position: absolute;
-  margin-top: 10px !important;
-  margin-left: -120px;
-  opacity: 0.15;
-  display: flex;
-  justify-content: center;
-}
+
 
 .about-heading {
   color: rgb(255, 193, 5);
@@ -254,44 +255,14 @@ body {
   color: black;
 }
 
-
-.service-item{
-  background-color: rgb(255, 193, 5);
-  color: black;
-  width:auto;
-  height: auto;
-  border-radius: 10px;
-  margin-top: 60px;
-  margin-bottom: 70px;
-  font-size: 20px;
-  font-weight: 500;
-  padding-top: 50px;
-  
-}
-
 .line{
   color: rgb(255, 193, 5) !important;
 }
 
-.service-icon{
-  font-size: 65px;
-  background-color: black;
-  color: aliceblue;
-  padding-inline: 20px;
-  border-radius: 50%;
-  margin-top: auto;
-
-  align-items: center;
-}
-.service-icon:hover{
-  color: black;
-  background-color: rgb(255, 193, 5);
-  transition: 1s;
-}
 
 .about-para{
   padding: 20px;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .service-item:hover{
@@ -688,7 +659,8 @@ input, textarea{
   border-radius: 10px;
   font-weight: 500;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .follow_btn:hover{
@@ -743,9 +715,7 @@ input, textarea{
 .event-yt{
   background-color: rgb(26, 26, 26);
   padding: 10px 20px;
-  width:290px;
-  margin-left:-380px;
-  margin-top:350px;
+  width:300px;
   border-radius: 25px;
   color: rgb(255, 193, 5);
   cursor: pointer;
@@ -827,6 +797,12 @@ input, textarea{
   border-radius: 10px;
   padding: 10px;
   border: 2px solid rgb(255, 193, 5) ;
+}
+
+.booking-btn:hover{
+  transition: 0.5s ease-in-out;
+  color: rgba(255, 193, 5, 0.3);
+  box-shadow: 0px 0px 50px 10px rgba(255, 193, 5, 0.3);
 }
 
 
