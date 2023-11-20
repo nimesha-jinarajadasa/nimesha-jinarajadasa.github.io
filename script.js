@@ -120,7 +120,7 @@ var set = setInterval(ytfun, 1);
 
 //CoDeKu
 
-var codeku = document.getElementById("codeku-followers-count");
+/*var codeku = document.getElementById("codeku-followers-count");
 var codekuFollowersCount = 293;
 
 var codeku_counter = 0;
@@ -139,11 +139,11 @@ var codekufun = function codekuup() {
 };
 
 var set = setInterval(codekufun, 1);
-
+*/
 
 
 //NJ Linkedin
-
+/*
 var njLinkedin = document.getElementById("nj-followers-count");
 var njLinkedinFollowersCount = 2768;
 
@@ -163,7 +163,7 @@ var linkedinfun = function linkedinup() {
 };
 
 var set = setInterval(linkedinfun, 1);
-
+*/
 
 
 //NJ Discord

@@ -96,11 +96,11 @@ body {
   border: 2px solid rgb(255, 193, 5);
 }
 
-.hero-row {
-  /* height: 100vh;
+/*.hero-row {
+   height: 100vh;
   display: flex;
-  align-items: center; */
-}
+  align-items: center; 
+}*/
 
 .hero-texts {
   animation-name: hero-texts-ani;
