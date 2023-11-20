@@ -77,7 +77,8 @@ var counter = setInterval(function () {
 //Social Media Statistics
 
 //YouTube
-const YTAPIKey = $YT_DATA_API;
+
+const YTAPIKey = "AIzaSyATFcx9i93hcMuwXStS9S3gSpqGWby0Jcg";
 const ytchannelId = "UCN4fELPxNvqoYlcfmgqlzCw";
 const subscriberCount = document.getElementById("yt-sub-count");
 
