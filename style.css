@@ -15,6 +15,7 @@ p, li, .service-desc{
   font-weight: 400 !important;
   font-size: 16px !important;
   color: rgb(172, 172, 172) !important;
+  margin-bottom: 25px !important;
 }
 
 h1{
@@ -50,11 +51,6 @@ body {
   animation-name: logo-ani;
   animation-duration: 1.5s;
   animation-timing-function: ease-in-out;
-}
-
-.logo:hover {
-  color: rgba(255, 255, 255, 1);
-  text-shadow: 0px 0px 50px 20px rgba(255, 193, 5, 0.3);
 }
 
 .contact-btn {
@@ -198,7 +194,7 @@ body {
 }
 
 .hero {
-  background-image: url("https://cdn.wallpapersafari.com/4/56/kbALhV.jpg") !important;
+  background-image: url("assets/images/hero-brackground.webp") !important;
   width: 100vw;
   height: 100vh;
   position: absolute;
@@ -755,7 +751,6 @@ input, textarea{
   height: 100px;
   border-radius: 10px;
   margin-bottom: 35px;
-  margin-top: 15px !important;
 }
 
 .statistics-header{
@@ -768,7 +763,6 @@ input, textarea{
   align-items: center;
   justify-content: center;
   margin: -10px;
-  
 }
 
 .statistics-header i{
