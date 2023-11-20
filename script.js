@@ -120,7 +120,7 @@ var set = setInterval(ytfun, 1);
 //CoDeKu
 
 var codeku = document.getElementById("codeku-followers-count");
-var codekuFollowersCount = 292;
+var codekuFollowersCount = 293;
 
 var codeku_counter = 0;
 
@@ -144,7 +144,7 @@ var set = setInterval(codekufun, 1);
 //NJ Linkedin
 
 var njLinkedin = document.getElementById("nj-followers-count");
-var njLinkedinFollowersCount = 2752;
+var njLinkedinFollowersCount = 2768;
 
 var linkedin_counter = 0;
 
@@ -215,8 +215,6 @@ var af = function allup() {
     
     var allFollowersCount =
     ytSubscribersCount +
-    codekuFollowersCount +
-    njLinkedinFollowersCount +
     njDiscordMembersCount;
     allFollowers.innerHTML = allFollowersCount;
 
