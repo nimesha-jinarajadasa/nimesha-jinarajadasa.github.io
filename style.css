@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Inter:wght@100&family=Poppins:wght@500;600&display=swap');
 
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: "Poppins";
 }
 
@@ -21,7 +24,7 @@ h1{
 
 body {
   background-color: black !important;
-
+  overflow-x: hidden;
 }
 
 .viewport{
