@@ -181,7 +181,7 @@ discordRequest.onreadystatechange = function(){
   }
 }
 
-discordRequest.open("GET", "https://discord.com/api/v9/invites/mTGpeMQf?with_counts=true&with_expiration=false", true);
+discordRequest.open("GET", "https://discord.com/api/v9/invites/mTGpeMQf?with_counts=true&with_expiration=true", true);
 
 discordRequest.send();
 

@@ -803,6 +803,10 @@ input, textarea{
   box-shadow: 0px 0px 50px 10px rgba(255, 193, 5, 0.3);
 }
 
+.upwork-badges{
+  background: linear-gradient(45deg, rgba(255, 193, 5) 0%,  rgb(217, 9, 2)  100% );
+}
+
 
 
 /*
