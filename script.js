@@ -346,3 +346,25 @@ function visitorCountUpdater() {
 
 
 
+//Course sidebar
+
+function courseVideoSelector(vidId){
+  var videosCount = document.querySelectorAll('.video-item').length;
+  var selectedVideo = document.getElementById(vidId);
+
+  for(var i = 1; i <= videosCount; i++){
+    if(i.toString() == vidId){
+      selectedVideo.classList = "video-item video-item-active";
+      document.getElementById("video-content-"+i.toString()+"").className = "video-content-active";
+    }
+    else{
+      document.getElementById(i.toString()).classList = "video-item";
+      document.getElementById("video-content-"+i.toString()+"").className = "video-content-deactive";
+    }
+  }
+}
+
+
+
+
+
