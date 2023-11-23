@@ -352,6 +352,12 @@ input, textarea{
   font-weight: bold;
 }
 
+.course-line-paid{
+  color: rgb(220,53,69);
+  height: 5px;
+  font-weight: bold;
+}
+
 .section-desc{
   color: aliceblue !important;
   text-align: center !important;
@@ -824,6 +830,59 @@ input, textarea{
   background: linear-gradient(45deg, rgba(255, 193, 5) 0%,  rgb(217, 9, 2)  100% );
 }
 
+
+.video-sidebar{
+  position: static;
+  height: 100vh;
+  background-color: rgb(27,27, 27);
+  padding: 20px;
+  border-radius: 10px !important;
+}
+
+.video-item{
+  font-size:15px !important;
+  color: white !important;
+  list-style: none;
+  background-color: rgb(48,48,48);
+  line-height: 25px !important;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.video-item:hover{
+  cursor: pointer;
+}
+
+
+.video-item-active{
+  border: 2px solid rgb(255, 193, 5);
+  background: linear-gradient(45deg, rgb(255, 193, 5,0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
+}
+
+
+.video-content-active{
+  display: block;
+  animation: course-video-active;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in-out;
+}
+
+.video-content-deactive{
+  display: none;
+}
+
+@keyframes course-video-active {
+  0%{
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 
 
 /*
