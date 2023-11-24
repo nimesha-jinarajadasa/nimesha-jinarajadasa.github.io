@@ -34,6 +34,9 @@
   <!--scrollrevealJS -->
   <script src="https://unpkg.com/scrollreveal"></script>
 
+  <!-- Slick Carousel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </head>
 <body>
           <nav class="navbar navbar-expand-lg fixed-navbar sticky-top">
@@ -93,7 +96,27 @@
         </div>
       </nav>
 
-      <!-- Free Courses -->
+      <!-- My Clients -->
+      <div class="container my-clients">
+        <br>
+        <h1 class="text-center text-light section-header fw-bold">
+          MY CLIENTS
+        </h1>
+          <div class="clients-logos slider">
+            <div class="slide"><img src="assets/images/virtusa.png"  style="margin-top:20px;" width="0px" alt="logo"></div>
+            <div class="slide"><img src="assets/images/IFS_logo_2021.png"  width="0px" alt="logo"></div>
+            <div class="slide"><img src="assets/images/aws logo.png"  width="0px" alt="logo"></div>
+            <div class="slide"><img src="assets/images/Upwork-Logo.png"  width="0px" alt="logo"></div>
+            <div class="slide"><img src="assets/images/virtusa.png" style="margin-top:20px; " width="0px" alt="logo"></div>
+            <div class="slide"><img src="assets/images/IFS_logo_2021.png" width="0px" alt="logo"></div>
+            <div class="slide"><img src="assets/images/aws logo.png"  width="0px" alt="logo"></div>
+            <div class="slide"><img src="assets/images/Upwork-Logo.png" width="0px" alt="logo"></div>
+          
+            
+          </div>
+      </div>
+
+      <!--Courses -->
       <div class="container">
         <div class="row">
           <div class="col-12 px-3 px-lg-0">
@@ -106,6 +129,7 @@
             </p>
             <hr class="line" />
 
+            <!-- Free Courses -->
             <h3 class="text-center fw-bold text-warning">Free Courses</h3>
             <br>
             <div class="row">
@@ -132,7 +156,7 @@
               <br><br>
 
               <hr class="line" />
-
+              <!-- Paid Courses -->
               <h3 class="text-center fw-bold text-warning">Paid Courses</h3>
               <br>
               <div class="row">
@@ -182,5 +206,33 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"
       ></script>
+
+      <script>
+        $(document).ready(function(){
+         
+            $('.clients-logos').slick({
+            slidesToShow: 4,
+            slidesToSrcoll: 1,
+            autoplay:true,
+            autoplaySpeed: 1500,
+            arrows: false,
+            dots: false,
+            pauseOnHover: false,
+            responsive: [{
+                breakpoint: 768,
+                setting:{
+                  slidesToShow: 3
+                }
+            },{
+              breakpoint: 520,
+              setting:{
+                slidesToShow: 2
+              }
+            }]
+          });
+          });
+  
+
+      </script>
 </body>
 </html>

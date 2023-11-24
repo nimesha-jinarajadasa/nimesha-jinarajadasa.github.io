@@ -872,6 +872,68 @@ input, textarea{
   display: none;
 }
 
+
+/*My Clients Start*/
+
+
+.slick-slide{
+  margin: 100px 20px;
+}
+
+.slick-slide img{
+  width: 80%;
+  animation: cl-slider-ani 0.5s ease-in-out;
+}
+
+@keyframes cl-slider-ani {
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+  
+}
+
+.slick-slider{
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+}
+
+.slick-list{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-track{
+  position: relative;
+  top:0;
+  left: 0;
+  display: block;
+}
+
+.slick-slide{
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+.slick-slide img{
+  display: block;
+}
+
+.slick-initialized .slick-slide{
+  display: block;
+}
+
+/*My Clients End*/
+
 @keyframes course-video-active {
   0%{
     opacity: 0;
