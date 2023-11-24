@@ -637,7 +637,6 @@ input, textarea{
   height: auto !important;
   position: sticky !important;
   top: -250px !important;
-  z-index: -1 !important;
   margin-bottom: 20px !important;
 
 }
@@ -783,7 +782,7 @@ input, textarea{
 .statistics-header{
   background-color:rgb(48, 48, 48);
   color: white;
-  padding: 10px !important;
+  padding: 15px !important;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
