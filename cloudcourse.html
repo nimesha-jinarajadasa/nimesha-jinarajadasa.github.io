@@ -151,36 +151,36 @@
           </div>
 
 
-          <div class="col-4 course-video d-inline d-lg-none">
+          <div class="col-4 course-video d-block d-lg-none">
             <div class="video-sidebar">
-              <p class="p-2 fw-bold text-warning">Select a module</p>
+              <h5 class="p-2 fw-bold text-warning">Select a module</h5>
               <div
-                class="video-item video-item-active"
+                class="video-item-mobile video-item-active-mobile"
                 id="1"
-                onclick="courseVideoSelector(id);"
+                onclick="courseVideoSelectorMobile(id);"
               >
                 <i class="bi bi-film text-warning mx-1"></i> 1
               </div>
-              <div class="video-item" id="2" onclick="courseVideoSelector(id);">
+              <div class="video-item-mobile" id="2" onclick="courseVideoSelectorMobile(id);">
                 <i class="bi bi-film text-warning mx-1"></i> 2
               </div>
-              <div class="video-item" id="3" onclick="courseVideoSelector(id);">
+              <div class="video-item-mobile" id="3" onclick="courseVideoSelectorMobile(id);">
                 <i class="bi bi-film text-warning mx-1"></i> 3
               </div>
-              <div class="video-item" id="4" onclick="courseVideoSelector(id);">
+              <div class="video-item-mobile" id="4" onclick="courseVideoSelectorMobile(id);">
                 <i class="bi bi-film text-warning mx-1"></i> 4
               </div>
-              <div class="video-item" id="5" onclick="courseVideoSelector(id);">
+              <div class="video-item-mobile" id="5" onclick="courseVideoSelectorMobile(id);">
                 <i class="bi bi-film text-warning mx-1"></i> 5
               </div>
             </div>
           </div>
 
-          <div class="col-8">
+
+          <div class="col-8 p-4" style="background-color: rgb(48,48,48); border-radius: 10px !important;">
             <div class="video-content-active" id="video-content-1">
               <h3 class="text-light fw-bold mb-3">
-                1. මොකක්ද මේ cloud-native කියන්නේ?|Lead Software Engineer Promotion
-                එක හම්බුනා|office එකේ daily කරන වැඩ
+                1. මොකක්ද මේ cloud-native කියන්නේ?
               </h3>
               <br>
               <iframe
@@ -195,14 +195,19 @@
               ></iframe>
 
               <br /><br /><br />
-              <h5 class="text-light fw-bold">Description</h5>
+              <div style="background-color: rgb(28,28,28); padding: 25px; border-radius: 10px;">
+                <h5 class="text-light fw-bold">Description</h5>
               <br />
-              <p>
-                Lead Software Engineer Promotion එක හම්බුනා 🏅🏅 මම Kodekloud
-                එකේ Lead Software Engineer කෙනෙක් විදියට කරන්නේ මොනවද? ✔️✔️ Life
-                Captured Subscribe කරලා share කරන්න. My Linkedin Official : /
-                nimeshmhj
+              <p style="background-color: rgb(48,48,48); padding: 20px; border-radius: 10px;">
+                Cloud native computing is an approach in software development that utilizes cloud computing to "build and run scalable applications in modern, dynamic environments such as public, private, and hybrid clouds".
               </p>
+
+              <h5 class="text-light fw-bold">Resources</h5>
+              <br />
+              <p style="background-color: rgb(48,48,48); padding: 10px; border-radius: 10px;">
+                External Link : <a href="https://aws.amazon.com/what-is/cloud-native/" class="text-warning" target="_blank">AWS</a>
+              </p>
+              </div>
             </div>
 
             <div class="video-content-deactive" id="video-content-2">
@@ -222,11 +227,19 @@
               ></iframe>
 
               <br /><br /><br />
-              <h5 class="text-light fw-bold">Description</h5>
+              <div style="background-color: rgb(28,28,28); padding: 25px; border-radius: 10px;">
+                <h5 class="text-light fw-bold">Description</h5>
               <br />
-              <p>
+              <p style="background-color: rgb(48,48,48); padding: 20px; border-radius: 10px;">
                 Microservices වලින් පටන් ගමු. 📦📦📦 
               </p>
+
+              <h5 class="text-light fw-bold">Resources</h5>
+              <br />
+              <p style="background-color: rgb(48,48,48); padding: 10px; border-radius: 10px;">
+                External Link : <a href="https://www.techtarget.com/searchapparchitecture/definition/microservices" class="text-warning" target="_blank">techtarget.com</a>
+              </p>
+              </div>
             </div>
 
             <div class="video-content-deactive" id="video-content-3">
@@ -246,14 +259,22 @@
               ></iframe>
 
               <br /><br /><br />
-              <h5 class="text-light fw-bold">Description</h5>
+              <div style="background-color: rgb(28,28,28); padding: 25px; border-radius: 10px;">
+                <h5 class="text-light fw-bold">Description</h5>
               <br />
-              <p>
+              <p style="background-color: rgb(48,48,48); padding: 20px; border-radius: 10px;">
                 Cloud native architecture series එකේ මීලග කොටස. ☁️☁️
                 Docker කොහොමද සම්බන්ද වෙන්නේ මෙතනට. 🐳🐳
 
                 Containerization Fundementals ඔලුවට දාගමු. 📦📦📦
               </p>
+
+              <h5 class="text-light fw-bold">Resources</h5>
+              <br />
+              <p style="background-color: rgb(48,48,48); padding: 10px; border-radius: 10px;">
+                External Link : <a href="https://www.ibm.com/topics/containerization" class="text-warning" target="_blank">IBM</a>
+              </p>
+              </div>
             </div>
 
             <div class="video-content-deactive" id="video-content-4">
@@ -273,15 +294,23 @@
               ></iframe>
 
               <br /><br /><br />
-              <h5 class="text-light fw-bold">Description</h5>
+              <div style="background-color: rgb(28,28,28); padding: 25px; border-radius: 10px;">
+                <h5 class="text-light fw-bold">Description</h5>
               <br />
-              <p>
+              <p style="background-color: rgb(48,48,48); padding: 20px; border-radius: 10px;">
                 මේ video එකෙන්...
 
                 DevOps, DevSecOps, SRE, CloudOps, Platform Engineering කරලියට ආවේ කොහොමද. 💻💻🛠️🛠️
 
                 MSc එකේ සල්ලි ටික Linux Foundation | CNCF | Kubernetes certifications වලට ඉතුරු කරගන්න 🎖️🎖️🎖️
               </p>
+
+              <h5 class="text-light fw-bold">Resources</h5>
+              <br />
+              <p style="background-color: rgb(48,48,48); padding: 10px; border-radius: 10px;">
+                External Link : <a href="https://www.cncf.io/training/certification/cka/" class="text-warning" target="_blank">cncf.io</a>
+              </p>
+              </div>
             </div>
 
             <div class="video-content-deactive" id="video-content-5">
@@ -301,15 +330,23 @@
               ></iframe>
 
               <br /><br /><br />
-              <h5 class="text-light fw-bold">Description</h5>
+              <div style="background-color: rgb(28,28,28); padding: 25px; border-radius: 10px;">
+                <h5 class="text-light fw-bold">Description</h5>
               <br />
-              <p>
+              <p style="background-color: rgb(48,48,48); padding: 20px; border-radius: 10px;">
                 Cloud Native Architecture ප්‍රධාන කොටස්(Core Pilllars) වල අද කතා කරන්නේ තුන් වන අංගය(pillar),  CI /CD  ගැන. 
 
                 අපි දැන් Microservices සහ Containerization ගැන කතා කරලා ඉවරයි video දෙකකින් overview එකක් විදියට.  📦📦📦
 
                 CI /CD කියන එකෙත් අවබෝධයක් අත්‍යවශයි, මේ ගමන ඉස්සරහට යන්න. ඉතින් හොදට අවබෝධ කරගන්න try කරන්න. ඕන කෙනෙක්ට තේරෙන්න තමා මන් explanations දෙන්නේ.  🛠️🏗️🏗️
               </p>
+
+              <h5 class="text-light fw-bold">Resources</h5>
+              <br />
+              <p style="background-color: rgb(48,48,48); padding: 10px; border-radius: 10px;">
+                External Link : <a href="https://www.redhat.com/en/topics/devops/what-is-ci-cd" class="text-warning" target="_blank">redhat</a>
+              </p>
+              </div>
             </div>
 
 
@@ -319,6 +356,7 @@
     </div>
 
     <!--Footer-->
+    <br>
     <div class="container-fluid">
       <div class="row copyright">
         All right reserved 2023 &copy; Nimesha Jinarajadasa
