@@ -367,6 +367,22 @@ function courseVideoSelector(vidId){
   }
 }
 
+function courseVideoSelectorMobile(vidId){
+  var videosCount = document.querySelectorAll('.video-item-mobile').length;
+  var selectedVideo = document.getElementById(vidId);
+
+  for(var i = 1; i <= videosCount; i++){
+    if(i.toString() == vidId){
+      selectedVideo.classList = "video-item-mobile video-item-active-mobile";
+      document.getElementById("video-content-"+i.toString()+"").className = "video-content-active";
+    }
+    else{
+      document.getElementById(i.toString()).classList = "video-item-mobile";
+      document.getElementById("video-content-"+i.toString()+"").className = "video-content-deactive";
+    }
+  }
+}
+
 
 
 
