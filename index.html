@@ -4,55 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ali Abdaal</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Bootstrap Site</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <div class="header-content">
-            <h1>Ali Abdaal</h1>
-            <p>Welcome to my personal website.</p>
-            <nav>
-                <a href="#about">About</a>
-                <a href="#courses">Courses</a>
-                <a href="#blog">Blog</a>
-                <a href="#book">Book</a>
-                <a href="#contact">Contact</a>
-            </nav>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Ali Abdaal is a doctor, YouTuber, and online entrepreneur. He shares productivity tips, study techniques, and more.</p>
-        </section>
-
-        <section id="courses">
-            <h2>Courses</h2>
-            <!-- Placeholder for course details -->
-        </section>
-
-        <section id="blog">
-            <h2>Blog</h2>
-            <!-- Placeholder for blog posts -->
-        </section>
-
-        <section id="book">
-            <h2>Book</h2>
-            <!-- Placeholder for book information -->
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <!-- Placeholder for contact form/details -->
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2023 Ali Abdaal</p>
-    </footer>
-</body>
-
-</html>
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <h1>Welcome to My Website</h1>
+        <p>Thi
