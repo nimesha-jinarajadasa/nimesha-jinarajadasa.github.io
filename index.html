@@ -73,6 +73,18 @@
         .box.software { background-color: #ffdddd; }
         .box.cloud { background-color: #ddffdd; }
         .box.devops { background-color: #ddddff; }
+
+         .video-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .video-list-item {
+            margin-bottom: 20px;
+        }
+        .video-list-item iframe {
+            width: 100%;
+            height: 180px;
+        }
     </style>
 </head>
 
@@ -130,7 +142,7 @@
         </div>
     </div>
 
-       <!-- Two Column Content Section -->
+     <!-- Two Column Content Section -->
     <div class="container mt-5">
         <div class="row">
             <!-- Left Column -->
@@ -143,8 +155,18 @@
             </div>
             <!-- Right Column -->
             <div class="col-md-6">
-                <h2>Right Column Content</h2>
-                <p>This is where you can place widgets, additional information, or any other content you wish to showcase. It balances the content on the left and provides a more structured look to the page.</p>
+                <h2>Related YouTube Videos</h2>
+                <ul class="video-list">
+                    <li class="video-list-item">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
+                        <p>Video 1: Short description of the first video.</p>
+                    </li>
+                    <li class="video-list-item">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+                        <p>Video 2: Short description of the second video.</p>
+                    </li>
+                    <!-- ... Add more video list items similarly ... -->
+                </ul>
             </div>
         </div>
     </div>
