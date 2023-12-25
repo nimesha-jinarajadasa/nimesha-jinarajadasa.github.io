@@ -49,19 +49,19 @@
     
         /* Updated box styling for 'How Can I Help You' section */
         .help-box {
-            background-color: #ffffff; /* White background */
-            border-radius: 10px;
-            padding: 30px;
-            margin: 20px 0;
+            background-color: #ffccbc; /* Eye-catching color */
+            border-radius: 15px;
+            padding: 20px;
+            margin: 10px 0;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
+            transition: transform 0.3s, box-shadow 0.3s; /* Added transition for smooth effect */
+            cursor: pointer;
             text-align: center;
-            height: 100%; /* Maintain same height for all boxes */
         }
-    
+        
         .help-box:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px) scale(1.05); /* Slight scale and translateY transformation on hover */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
         }
     
         .help-box h4 {
@@ -183,27 +183,27 @@
         </div>
     </div>
 
-    <!-- How Can I Help You Section -->
+   <!-- How Can I Help You Section -->
     <div class="container help-section">
         <h2>How Can I Help You?</h2>
         <div class="row">
             <div class="col-md-4 mb-3">
-                <div class="help-box">
+                <a href="web-development-page.html" class="box help-box">
                     <h4>Web Development</h4>
                     <p>Expertise in creating seamless and interactive web applications.</p>
-                </div>
+                </a>
             </div>
             <div class="col-md-4 mb-3">
-                <div class="help-box">
+                <a href="devops-guidance-page.html" class="box help-box">
                     <h4>DevOps Guidance</h4>
                     <p>Guidance on implementing efficient DevOps practices.</p>
-                </div>
+                </a>
             </div>
             <div class="col-md-4">
-                <div class="help-box">
+                <a href="code-reviews-page.html" class="box help-box">
                     <h4>Code Reviews</h4>
                     <p>Providing detailed and constructive code reviews.</p>
-                </div>
+                </a>
             </div>
         </div>
     </div>
