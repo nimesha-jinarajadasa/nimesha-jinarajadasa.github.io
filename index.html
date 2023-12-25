@@ -32,46 +32,46 @@
             color: #555555; /* Changed color to a decent gray */
         }
        /* Styling for 'How Can I Help You' section */
-.help-section {
-    background-color: #eaf1f9;
-    padding: 40px 20px;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.help-section h2 {
-    margin-bottom: 30px;
-    color: #333333; /* Dark grey color */
-    font-size: 1.5rem; /* Larger font size */
-}
-
-/* Enhanced box styling for visual appeal */
-.box {
-    background-color: #ffccbc; /* Eye-catching color */
-    border-radius: 15px;
-    padding: 20px;
-    margin: 10px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-    cursor: pointer;
-    text-align: center;
-}
-
-.box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.box h4 {
-    color: #009688; /* Teal color for headings */
-    margin-bottom: 15px;
-}
-
-.box p {
-    color: #555; /* Darker text color */
-}
+        .help-section {
+            background-color: #eaf1f9;
+            padding: 40px 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .help-section h2 {
+            margin-bottom: 30px;
+            color: #333333; /* Dark grey color */
+            font-size: 1.5rem; /* Larger font size */
+        }
+        
+        /* Enhanced box styling for visual appeal */
+        .box {
+            background-color: #ffccbc; /* Eye-catching color */
+            border-radius: 15px;
+            padding: 20px;
+            margin: 10px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            text-align: center;
+        }
+        
+        .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        
+        .box h4 {
+            color: #009688; /* Teal color for headings */
+            margin-bottom: 15px;
+        }
+        
+        .box p {
+            color: #555; /* Darker text color */
+        }
         .video-list {
             list-style-type: none;
             padding-left: 0;
@@ -86,6 +86,32 @@
         .box-lower {
             margin-top: 20px;
         }
+        /* Styling for Subscribe to Newsletter Section */
+        .container {
+            background-color: #f9f9f9; /* Light grey background */
+            padding: 40px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        h2 {
+            color: #333; /* Dark grey color */
+        }
+        
+        p {
+            color: #555; /* Slightly darker text color */
+            margin-bottom: 20px;
+        }
+        
+        input[type="email"] {
+            border-radius: 5px 0 0 5px; /* Rounded corners for email input */
+        }
+        
+        .btn-primary {
+            border-radius: 0 5px 5px 0; /* Rounded corners for subscribe button */
+        }
+
     </style>
 </head>
 
@@ -180,6 +206,24 @@
             </div>
         </div>
     </div>
+
+    <!-- Subscribe to Newsletter Section -->
+<div class="container mt-5">
+    <h2 class="text-center mb-4">💌 Subscribe to Sunday Snippets</h2>
+    <p class="text-center">"Your emails always warm the cockles of my heart"</p>
+    <p class="text-center mb-4">Join a growing community of more than 461,000 (🤯) friendly readers. Every Sunday I share actionable productivity tips, practical life advice, and high-quality insights from across the web, directly to your inbox.</p>
+    
+    <!-- Subscription Form -->
+    <form action="#" method="post" class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="input-group mb-3">
+                <input type="email" class="form-control" placeholder="Enter your email" aria-label="Email address" required>
+                <button class="btn btn-primary" type="submit">SUBSCRIBE</button>
+            </div>
+        </div>
+    </form>
+</div>
+
 
     <!-- Footer -->
     <footer>
