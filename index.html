@@ -110,7 +110,13 @@
         
         .btn-primary {
             border-radius: 0 5px 5px 0; /* Rounded corners for subscribe button */
+            transition: background-color 0.3s ease-in-out;
         }
+        
+        .btn-primary:hover {
+            background-color: #007bff; /* Bootstrap's primary color on hover */
+        }
+
 
     </style>
 </head>
@@ -213,16 +219,22 @@
     <p class="text-center">"Your emails always warm the cockles of my heart"</p>
     <p class="text-center mb-4">Join a growing community of more than 461,000 (🤯) friendly readers. Every Sunday I share actionable productivity tips, practical life advice, and high-quality insights from across the web, directly to your inbox.</p>
     
-    <!-- Subscription Form -->
-    <form action="#" method="post" class="row justify-content-center">
-        <div class="col-md-6">
-            <div class="input-group mb-3">
-                <input type="email" class="form-control" placeholder="Enter your email" aria-label="Email address" required>
-                <button class="btn btn-primary" type="submit">SUBSCRIBE</button>
+    <!-- Subscribe to Newsletter Section -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">💌 Subscribe to Sunday Snippets</h2>
+        <p class="text-center">"Your emails always warm the cockles of my heart"</p>
+        <p class="text-center mb-4">Join a growing community of more than 461,000 (🤯) friendly readers. Every Sunday I share actionable productivity tips, practical life advice, and high-quality insights from across the web, directly to your inbox.</p>
+        
+        <!-- Subscription Form -->
+        <form action="#" method="post" class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control" placeholder="Enter your email" aria-label="Email address" required>
+                    <button class="btn btn-primary" type="submit">SUBSCRIBE</button>
+                </div>
             </div>
-        </div>
-    </form>
-</div>
+        </form>
+    </div>
 
 
     <!-- Footer -->
