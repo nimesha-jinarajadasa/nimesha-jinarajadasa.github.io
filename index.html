@@ -31,38 +31,47 @@
             margin-bottom: 20px;
             color: #555555; /* Changed color to a decent gray */
         }
-        .help-section {
-            background-color: #eaeaea; /* Changed to a decent background color */
-            padding: 40px 20px;
-            border-radius: 10px;
-            margin-bottom: 30px;
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-        }
-        .help-section h2 {
-            margin-bottom: 20px;
-            color: #333333; /* Changed font color to black */
-        }
-        .box {
-            background-color: #ffffff;
-            border-radius: 15px;
-            padding: 20px;
-            margin: 20px 0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-            cursor: pointer;
-            text-align: center;
-        }
-        .box:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-        }
-        .box h4 {
-            color: #333333; /* Changed font color to black */
-            margin-bottom: 15px;
-        }
-        .box p {
-            color: #555;
-        }
+       /* Styling for 'How Can I Help You' section */
+.help-section {
+    background-color: #eaf1f9;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.help-section h2 {
+    margin-bottom: 30px;
+    color: #333333; /* Dark grey color */
+    font-size: 1.5rem; /* Larger font size */
+}
+
+/* Enhanced box styling for visual appeal */
+.box {
+    background-color: #ffccbc; /* Eye-catching color */
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    text-align: center;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.box h4 {
+    color: #009688; /* Teal color for headings */
+    margin-bottom: 15px;
+}
+
+.box p {
+    color: #555; /* Darker text color */
+}
         .video-list {
             list-style-type: none;
             padding-left: 0;
@@ -73,6 +82,9 @@
         .video-list-item iframe {
             width: 100%;
             height: 180px;
+        }
+        .box-lower {
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -114,30 +126,31 @@
         </div>
     </div>
 
-    <!-- How Can I Help You? Section -->
-    <div class="container mt-5 help-section">
+    <!-- How Can I Help You Section -->
+    <div class="container help-section">
         <h2>How Can I Help You?</h2>
         <div class="row">
-            <div class="col-md-4">
-                <div class="box software" onclick="location.href='#';" style="margin-top: -20px;">
-                    <h4>Software Development</h4>
-                    <p>Need help with software design, development, or troubleshooting? Let's talk!</p>
+            <div class="col-md-4 mb-3">
+                <div class="box">
+                    <h4>Web Development</h4>
+                    <p>Expertise in creating seamless and interactive web applications.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="box">
+                    <h4>DevOps Guidance</h4>
+                    <p>Guidance on implementing efficient DevOps practices.</p>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="box cloud" onclick="location.href='#';">
-                    <h4>Cloud Solutions</h4>
-                    <p>Looking to migrate to the cloud or optimize your current setup? I've got you covered.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="box devops" onclick="location.href='#';" style="margin-top: 20px;">
-                    <h4>DevOps Strategies</h4>
-                    <p>Want to streamline your development process and deployment pipelines? I can help.</p>
+                <div class="box box-lower">
+                    <h4>Code Reviews</h4>
+                    <p>Providing detailed and constructive code reviews.</p>
                 </div>
             </div>
         </div>
     </div>
+
 
      <!-- Two Column Content Section -->
     <div class="container mt-5">
