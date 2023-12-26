@@ -5,11 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Personal Branding</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <section class="intro-section">
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#writing">Writing</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="intro-section">
         <div class="column">
             <h1>Welcome to My Brand</h1>
             <p>Your introductory text here...</p>
@@ -19,38 +27,25 @@
         </div>
     </section>
 
-    <section class="help-section">
-        <h2>How I Can Help You</h2>
+    <section id="portfolio" class="help-section">
+        <h2>Portfolio</h2>
         <div class="service-box">
-            <h3>Service 1</h3>
-            <p>Description for Service 1...</p>
+            <h3>Project 1</h3>
+            <p>Description for Project 1...</p>
         </div>
-        <div class="service-box">
-            <h3>Service 2</h3>
-            <p>Description for Service 2...</p>
-        </div>
-        <div class="service-box">
-            <h3>Service 3</h3>
-            <p>Description for Service 3...</p>
-        </div>
-        <div class="service-box">
-            <h3>Service 4</h3>
-            <p>Description for Service 4...</p>
-        </div>
+        <!-- Add more portfolio items as needed -->
     </section>
 
-    <section class="youtube-section">
-        <h2>My YouTube Channel</h2>
-        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+    <section id="writing" class="help-section">
+        <h2>Writing</h2>
+        <div class="service-box">
+            <h3>Article 1</h3>
+            <p>Summary of Article 1...</p>
+        </div>
+        <!-- Add more writing pieces as needed -->
     </section>
 
-    <section class="newsletter-section">
-        <h2>Subscribe to My Newsletter</h2>
-        <form action="YOUR_SERVER_SCRIPT_URL" method="POST">
-            <input type="email" name="email" placeholder="Enter your email" required>
-            <button type="submit">Subscribe</button>
-        </form>
-    </section>
+    <!-- ... Rest of the sections (YouTube, Newsletter) ... -->
 
     <script src="js/main.js"></script>
 </body>
