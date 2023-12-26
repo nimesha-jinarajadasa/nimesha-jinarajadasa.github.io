@@ -1,33 +1,73 @@
-/* Basic Responsive Styles */
+/* Basic Responsive Styles with a touch of the screenshot aesthetics */
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #333;
 }
 
-header {
+nav {
+  background: #f8f9fa;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.intro {
+  padding: 20px;
+  text-align: center;
+}
+
+.subscribe-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.subscribe-button:hover {
+  background-color: #0056b3;
+}
+
+.guides {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.guides article {
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 30%;
+  text-align: center;
+}
+
+footer {
   background: #f8f9fa;
   padding: 20px;
   text-align: center;
 }
 
-nav {
-  /* Style your navigation bar */
-}
-
-.intro {
-  /* Style your introductory section */
-}
-
-.ultimate-guides, .explore, .latest-articles {
-  /* Style your main content sections */
-}
-
-footer {
-  /* Style your footer */
-}
-
 @media (max-width: 768px) {
-  /* Add responsive styles for mobile devices */
+  .guides {
+    flex-direction: column;
+  }
+
+  .guides article {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
