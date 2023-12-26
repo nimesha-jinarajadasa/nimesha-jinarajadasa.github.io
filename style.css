@@ -1,37 +1,74 @@
-/* style.css */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: white;
     margin: 0;
     padding: 0;
-    color: #333;
 }
 
-nav ul {
-    list-style-type: none;
-    /* Add more styles for navigation */
+nav {
+    background-color: black;
+    color: white;
+    padding: 1em;
+    text-align: center;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+nav a {
+    color: white;
+    padding: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-header {
-    /* Header styling */
+nav a:hover {
+    text-decoration: underline;
 }
 
-.subscription form {
-    /* Subscription form styling */
+.intro {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
 }
 
-.guides article {
-    /* Styles for guide articles */
+.left-column, .right-column {
+    width: 50%;
 }
 
-.explore, .latest-articles {
-    /* Styling for other sections */
+.right-column img {
+    width: 100%; /* Make the image responsive */
+    height: auto;
 }
 
-@media only screen and (max-width: 768px) {
-    /* Responsive styles for smaller devices */
+.services {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.service-box {
+    width: 23%; /* Adjust based on padding and margin */
+    display: inline-block;
+    margin: 1%;
+    padding: 20px;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+    }
+    .left-column, .right-column, .service-box {
+        width: 100%;
+    }
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
 }
