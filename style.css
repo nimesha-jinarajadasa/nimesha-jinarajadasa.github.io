@@ -1,48 +1,102 @@
+/* General styles */
 body {
     font-family: Arial, sans-serif;
+    color: black;
+    background-color: white;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
 }
 
-header {
-    background-color: #fff;
-    padding: 40px 20px;
+.intro-section, .help-section, .youtube-section, .newsletter-section {
+    padding: 50px 0;
     text-align: center;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.header-content h1 {
-    margin-bottom: 10px;
-    color: #333;
+/* Intro Section styles */
+.intro-section {
+    background-color: gray;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-.header-content p {
-    margin-bottom: 30px;
-    color: #666;
+.column {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #555;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: #000;
-}
-
-section {
-    padding: 40px 20px;
-    background-color: #fff;
-    margin: 20px 0;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
+.image-section {
     text-align: center;
-    padding: 20px 0;
+}
+
+/* Service boxes */
+.help-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-box {
+    width: 23%;
+    background-color: gray;
+    color: white;
+    padding: 20px;
+    margin: 1%;
+    text-align: center;
+}
+
+/* YouTube Section */
+.youtube-section iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+    background-color: gray;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .column {
+        flex: 100%;
+        text-align: center;
+    }
+
+    .service-box {
+        width: 45%;
+        margin: 2.5%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .column {
+        padding: 10px;
+    }
+
+    .service-box {
+        width: 90%;
+        margin: 5%;
+    }
 }
