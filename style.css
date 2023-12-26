@@ -1,73 +1,37 @@
-/* Basic Responsive Styles with a touch of the screenshot aesthetics */
+/* style.css */
 body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color: #333;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
 }
 
-nav {
-  background: #f8f9fa;
-  padding: 10px;
-  text-align: center;
+nav ul {
+    list-style-type: none;
+    /* Add more styles for navigation */
 }
 
-nav a {
-  color: #333;
-  text-decoration: none;
-  margin: 0 10px;
+nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
 
-nav a:hover {
-  text-decoration: underline;
+header {
+    /* Header styling */
 }
 
-.intro {
-  padding: 20px;
-  text-align: center;
-}
-
-.subscribe-button {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.subscribe-button:hover {
-  background-color: #0056b3;
-}
-
-.guides {
-  display: flex;
-  justify-content: space-around;
-  padding: 20px;
+.subscription form {
+    /* Subscription form styling */
 }
 
 .guides article {
-  border: 1px solid #ddd;
-  padding: 20px;
-  width: 30%;
-  text-align: center;
+    /* Styles for guide articles */
 }
 
-footer {
-  background: #f8f9fa;
-  padding: 20px;
-  text-align: center;
+.explore, .latest-articles {
+    /* Styling for other sections */
 }
 
-@media (max-width: 768px) {
-  .guides {
-    flex-direction: column;
-  }
-
-  .guides article {
-    width: 100%;
-    margin-bottom: 20px;
-  }
+@media only screen and (max-width: 768px) {
+    /* Responsive styles for smaller devices */
 }
