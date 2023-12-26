@@ -3,54 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Title</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Bootstrap Site</title>
+   <style>
+        /* Custom styles */
+        body {
+            font-family: 'Open Sans', sans-serif; /* Example font */
+            background-color: #f8f9fa; /* Light grey background */
+        }
+
+        nav.navbar {
+            background-color: #004085; /* Dark blue background for navbar */
+        }
+
+        nav .navbar-brand {
+            color: #ffffff; /* White text for brand */
+        }
+
+        nav .navbar-nav .nav-link {
+            color: #adb5bd; /* Grey text for navigation links */
+        }
+
+        nav .navbar-nav .nav-link:hover {
+            color: #ffffff; /* White text on hover */
+        }
+
+        header {
+            margin-top: 2rem;
+            color: #333333; /* Dark text for header */
+        }
+
+        header h1 {
+            font-size: 2.5rem; /* Large font size for main heading */
+        }
+
+        .subscription {
+            padding: 2rem 0;
+            background-color: #e9ecef; /* Light grey background */
+            border-top: 1px solid #dee2e6; /* Light grey border top */
+            border-bottom: 1px solid #dee2e6; /* Light grey border bottom */
+        }
+
+        .subscription h2 {
+            color: #333333; /* Dark text for subscription heading */
+            font-size: 1.5rem;
+        }
+
+        .subscription p {
+            color: #6c757d; /* Grey text */
+        }
+
+        .guides .card {
+            border: none; /* Remove default border */
+            box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15); /* Add shadow for depth */
+        }
+
+        .guides .card-title {
+            color: #007bff; /* Bootstrap primary blue for titles */
+        }
+
+        footer {
+            background-color: #343a40; /* Dark footer background */
+            color: #ffffff; /* White text color */
+            padding: 1rem 0;
+        }
+    </style>
 </head>
 <body>
-    <nav>
-        <!-- Replace with your own navigation items -->
-        <ul>
-            <li><a href="#articles">Articles</a></li>
-            <li><a href="#courses">Courses</a></li>
-            <!-- More navigation items -->
-        </ul>
-    </nav>
-    
-    <header>
-        <h1>Hey friends —</h1>
-        <p>I'm Ali. Welcome to my Ghost theme demo.</p>
-        <p>I'm a doctor, YouTuber, and podcaster.</p>
-        <!-- Additional header content -->
-    </header>
-    
-    <section class="subscription">
-        <form>
-            <input type="email" placeholder="Email address">
-            <button type="submit">Subscribe</button>
-        </form>
-    </section>
-    
-    <section class="guides">
-        <!-- Replace with your own content -->
-        <article>
-            <h2>Productivity</h2>
-            <p>How to execute efficiently, make time for what matters, and have fun along the way.</p>
-        </article>
-        <!-- More guide articles -->
-    </section>
-    
-    <section class="explore">
-        <!-- Explore section content -->
-    </section>
-    
-    <section class="latest-articles">
-        <!-- Latest articles content -->
-    </section>
-    
-    <footer>
-        <!-- Footer content -->
-    </footer>
-    
-    <script src="script.js"></script>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">Your Brand</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Articles <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Courses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Podcast</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Books</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Newsletter</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Membership</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="container text-center mt-5">
+    <h1>Hey friends —</h1>
+    <p>I'm Ali. Welcome to my Ghost theme demo.</p>
+    <p>I'm a doctor, YouTuber, and podcaster.</p>
+    <!-- More content here -->
+</header>
+
+<section class="container mt-5">
+    <div class="text-center mb-4">
+        <h2>Subscribe to our newsletter</h2>
+        <p>Sign up with your email address to receive news and updates.</p>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form class="form-inline justify-content-center">
+                <div class="form-group mb-2">
+                    <input type="email" class="form-control" placeholder="Email address">
+                </div>
+                <button type="submit" class="btn btn-primary mb-2 ml-2">Subscribe</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section class="container mt-5">
+    <div class="row">
+        <!-- Replace with your own card content -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="path-to-your-image.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Productivity</h5>
+                    <p class="card-text">How to execute efficiently, make time for what matters, and have fun along the way.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Repeat for other cards -->
+    </div>
+</section>
+
+<footer class="container text-center mt-5 mb-4">
+    <p>© 2023 Your Brand Name</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
