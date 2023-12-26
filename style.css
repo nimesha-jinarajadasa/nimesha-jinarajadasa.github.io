@@ -1,153 +1,33 @@
-/* General styles */
+/* Basic Responsive Styles */
 body {
-    font-family: Arial, sans-serif;
-    color: black;
-    background-color: white;
-    margin: 0;
-    padding: 0;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.intro-section, .help-section, .youtube-section, .newsletter-section {
-    padding: 50px 0;
-    text-align: center;
+header {
+  background: #f8f9fa;
+  padding: 20px;
+  text-align: center;
 }
 
-/* Intro Section styles */
-.intro-section {
-    background-color: gray;
-    color: white;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+nav {
+  /* Style your navigation bar */
 }
 
-.column {
-    flex: 1;
-    padding: 20px;
-    box-sizing: border-box;
+.intro {
+  /* Style your introductory section */
 }
 
-.image-section {
-    text-align: center;
+.ultimate-guides, .explore, .latest-articles {
+  /* Style your main content sections */
 }
 
-/* Service boxes */
-.help-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+footer {
+  /* Style your footer */
 }
 
-.service-box {
-    width: 23%;
-    background-color: gray;
-    color: white;
-    padding: 20px;
-    margin: 1%;
-    text-align: center;
-}
-
-/* YouTube Section */
-.youtube-section iframe {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Newsletter Section */
-.newsletter-section {
-    background-color: gray;
-    color: white;
-    padding: 50px 0;
-    text-align: center;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: black;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-/* Navigation Bar styles */
-.navbar {
-    background-color: black;
-    color: white;
-    padding: 10px 0;
-}
-
-.navbar ul {
-    list-style-type: none;
-    text-align: center;
-}
-
-.navbar ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.navbar ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 5px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.navbar ul li a:hover {
-    background-color: gray;
-}
-
-/* General adjustments */
-.intro-section, .help-section, .youtube-section, .newsletter-section {
-    background-color: white;
-    padding: 50px 0;
-    text-align: center;
-}
-
-/* Adjustments for "How Can I Help You" section */
-.help-section h2 {
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.service-box {
-    width: 23%;
-    background-color: gray;
-    color: white;
-    padding: 20px;
-    margin: 1%;
-    text-align: center;
-}
-
-/* Media Queries for responsiveness */
-@media screen and (max-width: 768px) {
-    .column {
-        flex: 100%;
-        text-align: center;
-    }
-
-    .service-box {
-        width: 45%;
-        margin: 2.5%;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .column {
-        padding: 10px;
-    }
-
-    .service-box {
-        width: 90%;
-        margin: 5%;
-    }
+@media (max-width: 768px) {
+  /* Add responsive styles for mobile devices */
 }
