@@ -7,8 +7,9 @@ body {
 }
 
 header {
-    background-color: #000;
-    color: #fff;
+    background-color: #fff; /* Changed to white */
+    color: #333; /* Text color for better contrast */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Added a subtle shadow for depth */
 }
 
 nav {
@@ -22,9 +23,13 @@ nav {
 }
 
 .nav-items a {
-    color: #fff;
+    color: #333; /* Changed to dark for better contrast */
     text-decoration: none;
     padding: 0 1em;
+}
+
+.nav-items a:hover {
+    color: #000; /* Darker on hover for interaction feedback */
 }
 
 .intro {
