@@ -119,27 +119,64 @@
             /* Add any styling you want for your text here */
         }
 
-        /* Responsive design starts here */
-        @media screen and (max-width: 768px) {
-            /* Adjust styles for mobile devices */
-            .home_topic_block, .YouTube-Video, .nav-link, .top-left-logo img {
-                /* Add your responsive styles here */
-         }
-        
-         ul li {
-            float: none;
-            display: block;
-            text-align: left;
-         }
-        
-         .row {
-            flex-direction: column;
-         }
-        
-         .col-4, .col-6 {
-            flex: 0 0 100%;
-            max-width: 100%;
-         }
+       /* Responsive design for mobile devices */
+@media screen and (max-width: 600px) {
+    .container, .row, .col-4, .col-6 {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .top-left-logo img {
+        width: 50px;
+        height: auto;
+    }
+
+    .top-left-logo, .nav-link, .home_topic_block, .YouTube-Video iframe {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .nav-link {
+        font-size: 12px;
+        padding: 10px 5px;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    ul li {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+    }
+
+    h1, h2, h3 {
+        font-size: smaller;
+    }
+
+    .form-control {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .btn {
+        width: 90%;
+        margin: 10px auto;
+        display: block;
+    }
+
+    /* Adjust other elements as necessary */
+}
+
+/* Tablet and other medium-sized devices */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Adjust styles for medium-sized screens like tablets */
+    /* Similar to the above, but with different size adjustments */
+}
 
     </style>
 </head>
