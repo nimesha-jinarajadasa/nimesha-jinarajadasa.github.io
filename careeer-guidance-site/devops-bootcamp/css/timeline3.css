@@ -1,0 +1,154 @@
+/**********************************/
+/********* Timeline 3 CSS *********/
+/**********************************/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+}
+
+.timeline {
+    position: relative;
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.container {
+    padding: 0 15px;
+    position: relative;
+    background: inherit;
+    width: 50%;
+    margin-top: -5px;
+}
+
+.container.left {
+    left: 0;
+}
+
+.container.right {
+    left: 50%;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 5px;
+    background: #00539C;
+    z-index: 1;
+}
+
+.container.left::before {
+    top: 0;
+    right: 0;
+}
+
+.container.right::before {
+    bottom: 0;
+    left: 0;
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 5px;
+    background: #00539C;
+    z-index: 1;
+}
+
+.container.left::after {
+    bottom: 0;
+    right: 0;
+}
+
+.container.right::after {
+    top: 0;
+    left: 0;
+}
+
+.container:first-child::before,
+.container:last-child::before {
+    display: none;
+}
+
+.container .content {
+    padding: 30px;
+    background: #ffffff;
+    position: relative;
+    border-right: 5px solid #00539C;
+    border-left: 5px solid #eeeeee;
+    border-radius: 15px 0 0 15px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .08);
+}
+
+.container.right .content {
+    border-right: 5px solid #eeeeee;
+    border-left: 5px solid #00539C;
+    border-radius: 0 15px 15px 0;
+}
+
+.container .content h2 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    font-weight: normal;
+    color: #00539C;
+}
+
+.container .content h2 span {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 5px 10px;
+    color: #ffffff;
+    background: #00539C;
+}
+
+.container .content p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 22px;
+    color: #454545;
+}
+
+@media (max-width: 767.98px) {
+    .timeline {
+        padding-bottom: 0;
+    }
+
+    .container {
+        width: 100%;
+        margin-top: 0;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .container.right {
+        left: 0%;
+    }
+
+    .container.left::after, 
+    .container.right::after,
+    .container.left::before,
+    .container.right::before {
+        width: 5px;
+        height: 35px;
+        left: 30px;
+    }
+    
+    .container.left .content,
+    .container.right .content {
+        border-right: 5px solid #eeeeee;
+        border-left: 5px solid #00539C;
+        border-radius: 0 15px 15px 0;
+    }
+}
